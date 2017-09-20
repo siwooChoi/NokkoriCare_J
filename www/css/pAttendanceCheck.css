@@ -1,0 +1,239 @@
+
+/* 출석정보 전체 틀*/
+#pAttendanceCheck{
+  position: absolute;
+  top:65px;
+  width: 360px;
+  height: 550px;
+  background-color: #FFFFA0;
+  /*background-color: white;*/
+  overflow-x: hidden;
+}
+
+
+
+/* 달력 */
+.pAttDatepickerDiv{
+  position: relative;
+  top:28px;
+  width: 180px;
+  height: 72px;
+  /*left: -1%;*/
+  background-color: #FFFFE0;
+}
+
+/* 달력 이미지 */
+.pAttDatepickerDiv > img{
+  position: relative;
+  width: 80px;
+  height: 72px;
+  z-index: 1;
+  background-color: #FFFFE0;
+}
+
+
+/* 달력 날짜 글씨 Div*/
+.pAttdateValueDiv{
+  position: absolute;
+  width: 270px;
+  height: 72px;
+  /*background-color: gray;*/
+  display: inline-block;
+  z-index: 1;
+  background-color: #FFFFA0;
+}
+
+.pAttDatepickerDiv > .ui-datepicker-trigger{
+  background-color: #FFFFA0;
+}
+
+/* 달력 날짜 글씨*/
+.pAttDateValueP{
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  top: 12px;
+  left: 30px;
+  font-size: 200%;
+  font-weight: bold;
+  /*text-align: center;*/
+  color: #2C3E50;
+  text-shadow: 2px 2px #aaaaaa;
+}
+
+
+/* 출석정보 메인 틀*/
+#pAttendanceCheckDiv{
+  position: absolute;
+  top:28px;
+  left:5%;
+  width: 90%;
+  height: 495px;
+  /*border: 1px solid black;*/
+  /*background-color: #FFFFE0;*/
+  background-color: white;
+
+}
+
+  /*출석 메시지 담을 Div*/
+#pAttTextDiv{
+  position: absolute;
+  top:99px;
+  left: 2%;
+  width: 95%;
+  height: 75px;
+}
+
+
+  /*출석 정보 입력란*/
+#pAttTextDiv > textarea{
+  /*position: relative;*/
+  /*left:4%;*/
+  /*margin-top:3%;*/
+  /*width: 90%;*/
+  border: 2px solid black;
+  font-size: 150%;
+  font-weight: bold;
+  overflow-y: hidden;
+}
+
+/*출석 정보 입력란 스크롤 바 보이지 않게 하기*/
+  #pAttTextDiv::-webkit-scrollbar{
+  display: none;
+}
+
+
+#pAttendanceChildDiv{
+  position: relative;
+  top:223px;
+  left: 0px;
+  width: 100%;
+  /*height: 124px;*/
+  height: 164px;
+  background-color: #FFFFE0;
+
+}
+
+/* 원아 이름, 이미지 담는 틀*/
+.pAtd_ImgAndName{
+  position: relative;
+  top: 20px;
+  /*margin-top: 3%;*/
+  width: 30%;
+  height: 124px;
+  background-color: #FFF320;
+  /*background-color:#FFE400;*/
+}
+
+/*원아 이미지 담고있는 div*/
+.pAtd_imageDiv{
+  position: absolute;
+  top:6px;
+  left: 5%;
+  width: 90%;
+  height: 87px;
+  border-radius: 20%;
+}
+/*원아 이미지*/
+.pAtd_imageDiv > img{
+  position: relative;
+  width: 100%;
+  height: 87px;
+  border-radius: 20%;
+  /*background-color: #FFFF70;*/
+}
+
+/*원아 이름 담고 있는 div*/
+.pAtd_NameDiv{
+  position: absolute;
+  top:95px;
+  width: 100%;
+}
+
+/* 원아 이름*/
+.pAtd_childName{
+  position: relative;
+  font-weight: bold;
+  font-size: 110%;
+  text-align: center;
+}
+
+/* 출석 버튼 */
+.pAttendance{
+  position: absolute;
+  top:38px;
+  left:32%;
+  width: 20%;
+  height: 90px;
+  background-color: white;
+  border: 2px solid #00B1F2;
+  border-radius: 20%;
+}
+
+/* 조퇴 버튼*/
+.pEarlyLeave{
+  position: absolute;
+  top:38px;
+  left:55%;
+  width: 20%;
+  height: 90px;
+  background-color: white;
+  /*border: 2px solid #FFFF68;*/
+  border: 2px solid gold;
+  border-radius: 20%;
+}
+
+/* 결석 버튼*/
+.pAbsence{
+  position: absolute;
+  top:38px;
+  left:78%;
+  width: 20%;
+  height: 90px;
+  background-color: white;
+  border: 2px solid #FF48FF;
+  border-radius: 20%;
+}
+
+/*각 버튼들 글씨*/
+.pAttendance > p, .pEarlyLeave > p, .pAbsence > p{
+  position: relative;
+  top: 31px;
+  font-weight: bold;
+  font-size: 120%;
+  text-align: center;
+}
+
+/* 취소 버튼*/
+#pAttCancelBtn{
+  position: absolute;
+  top: 396px;
+  left: 10px;
+  width: 140px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid #777777;
+  color: #555555;
+}
+
+/* 저장 버튼*/
+#pAttSaveBtn{
+  position: absolute;
+  top: 396px;
+  left: 160px;
+  width: 150px;
+  height: 40px;
+  /*background-color: #aaaaaa;*/
+  background-color: #0F9865;
+  color: white;
+  border: 1px solid #0F9865;
+}
+
+/* 취소, 저장 버튼의 글씨*/
+#pAttCancelBtn > p, #pAttSaveBtn >p{
+  position: relative;
+  top:7px;
+  font-size: 120%;
+  text-align: center;
+  font-weight: bold;
+}

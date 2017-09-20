@@ -1,0 +1,208 @@
+
+
+/* 슬라이드 형식으로 나올 패널*/
+.changeModePanel{
+  position: absolute;
+  /*top: 5px;*/
+  width: 360px;
+  height: 550px;
+  background-color: white;
+  /*border-radius: 3%;*/
+  z-index: 3;
+}
+
+/* 패널 닫기 버튼 */
+.changeModePanelCloseBtn{
+  position: relative;
+  top: 5px;
+  left: 315px;
+  width: 40px;
+  height: 40px;
+  /*background-color: #FFBFBF;*/
+  background-image: url('../img/xBtn.png');
+  background-size: 100%, 100%;
+}
+
+#tObChangeModePanel{
+  background-color: #ffeeee;
+}
+
+#tDevChangeModePanel{
+  background-color: #FFF9E9;
+}
+
+#tIChChangeModePanel{
+  background-color: #FFFFF0;
+}
+
+#tPhoUpChangeModePanel{
+  background-color: #F3F3FF;
+}
+
+#tAlbumChangeModePanel{
+  background-color: #FFF3FF;
+}
+
+
+.changeBtn1{
+  position: relative;
+  top: 15px;
+  left: 120px;
+  width: 120px;
+  height: 130px;
+  background-color: #ffcfcf;
+  text-align: center;
+  border-radius: 5%;
+  -webkit-box-shadow:0 2px 2px #555;
+}
+
+.changeBtn1 > img{
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.changeBtn1 > p {
+  position: relative;
+  /*left: 2px;*/
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.changeBtn23Box{
+  position: relative;
+  display: inline-block;
+  top: 25px;
+  left: 20px;
+  width: 320px;
+  height: 100px;
+  /*background-color: gray;*/
+
+}
+.changeBtn2{
+  position: absolute;
+  display: inline-block;
+  top: 0px;
+  width: 120px;
+  height: 130px;
+  text-align: center;
+  background-color: #ffdfaf;
+  border-radius: 5%;
+  -webkit-box-shadow:0 2px 2px #555;
+}
+
+.changeBtn2 > img{
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 100px;
+}
+
+.changeBtn2 > p {
+  position: relative;
+  /*top: 3px;*/
+  /*left: 2px;*/
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.changeBtn3{
+  position: absolute;
+  display: inline-block;
+  top: 0px;
+  left: 200px;
+  width: 120px;
+  height: 130px;
+  text-align: center;
+  background-color: #ffffcc;
+  border-radius: 5%;
+  -webkit-box-shadow:0 2px 2px #555;
+}
+
+.changeBtn3 > img{
+  position: relative;
+  display: inline-block;
+  /*top: 5px;*/
+  left: 2px;
+  width: 95px;
+  height: 95px;
+}
+
+.changeBtn3 > p {
+  position: relative;
+  left: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.changeBtn45Box{
+  position: relative;
+  top: 65px;
+  left: 40px;
+  width: 260px;
+  height: 100px;
+  /*background-color: gray;*/
+}
+
+.changeBtn4{
+  position: relative;
+  /*top: 50px;*/
+  left: 15px;
+  display: inline-block;
+  width: 120px;
+  height: 130px;
+  text-align: center;
+  background-color: #cfcfff;
+  border-radius: 5%;
+  -webkit-box-shadow:0 2px 2px #555;
+}
+
+.changeBtn4 > img{
+  position: relative;
+  display: inline-block;
+  top: 5px;
+  width: 95px;
+  height: 95px;
+}
+
+.changeBtn4 > p {
+  position: relative;
+  top: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.changeBtn5{
+  position: relative;
+  /*top: 50px;*/
+  display: inline-block;
+  left: 30px;
+  width: 120px;
+  height: 130px;
+  text-align: center;
+  background-color: #ffdfff;
+  border-radius: 5%;
+  -webkit-box-shadow:0 2px 2px #555;
+}
+
+.changeBtn5 > img{
+  position: relative;
+  display: inline-block;
+  top: 5px;
+  width: 95px;
+  height: 95px;
+}
+
+.changeBtn5 > p {
+  position: relative;
+  top: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}

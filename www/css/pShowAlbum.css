@@ -1,0 +1,159 @@
+#pShowAlbum{
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  background-color: #F0EBFF;
+}
+
+
+/*옵션버튼들 담는 Div*/
+#pShowAlbumOptions{
+  position: absolute;
+  width: 100%;
+  height:10%;
+
+}
+
+/*옵션버튼들 글씨*/
+.pShowAlbumOptionBtn > p{
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*최근 순 정렬*/
+#pShowAlbumOptionBtn1{
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 100px;
+  height: 40px;
+  background-color: #5F00FF;
+}
+
+
+/*오래된 순 정렬*/
+#pShowAlbumOptionBtn2{
+  position: absolute;
+  top: 15px;
+  left: 115px;
+  width: 100px;
+  height: 40px;
+  background-color: #D1B2FF;
+}
+
+/*날짜 선택*/
+#pShowAlbumOptionBtn3{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 15%;
+  height: 80%;
+  background-color: orange;
+}
+
+/* ~ */
+#pShowAlbumOptionBtn4{
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  width: 15%;
+  height: 80%;
+  /*background-color: red;*/
+}
+
+/*날짜선택2*/
+#pShowAlbumOptionBtn5{
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  width: 15%;
+  height: 80%;
+  background-color: orange;
+}
+
+/*조회*/
+#pShowAlbumOptionBtn6{
+  position: absolute;
+  top: 11%;
+  left: 86%;
+  width: 12%;
+  height: 78%;
+  background-color: #D1B2FF;
+}
+
+
+
+/*사진들 담는 메인 Div*/
+#pShowAlbumDiv{
+  position: absolute;
+  top: 70px;
+  left: 5%;
+  width: 90%;
+  height: 85%;
+  background-color: #F0EBFF;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/*스크롤 바 보이지 않게 하기*/
+#pShowAlbumDiv::-webkit-scrollbar{
+  display: none;
+}
+
+  /*사진 각각의 Div*/
+.pPhotoImgsDiv{
+  position: relative;
+  display: inline-block;
+  margin-top: 3%;
+  margin: 2%;
+  width: 45%;
+  height: 40%;
+  border: 1px solid black;
+}
+  /*사진*/
+.pPhotoImgsDiv > img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 원아선택 버튼*/
+#pShowAlbumBackBtn{
+  position: absolute;
+  top: 10px;
+  left: 240px;
+  width: 110px;
+  height: 8%;
+  background-color: white;
+  color: #555555;
+  border: 1px solid #777777;
+}
+/* 원아선택 버튼 글씨*/
+#pShowAlbumBackBtn > p{
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+/*#pShowAlbumDiv > img{
+  position: relative;
+  margin-top: 3%;
+  left: 3%;
+  width: 93%;
+  height: 55%;
+  border: 1px solid black;
+}*/
+
+/*#pShowAlbumDiv > p{
+  position: relative;
+  color: white;
+}*/

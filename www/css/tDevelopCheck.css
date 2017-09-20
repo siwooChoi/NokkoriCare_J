@@ -1,0 +1,646 @@
+
+
+/*body{
+  height: 100%;
+}*/
+
+body{
+
+}
+
+#tDevelopCheck{
+  position: absolute;
+  top:65px;
+  width:100%;
+  height: 550px;
+  /*background-color: #FFF1D3;*/
+  background-color: white;
+  overflow: hidden;
+}
+
+/*달력버튼*/
+.datepickerDiv_develop{
+position: relative;
+left:-2%;
+width: 100%;
+height: 30px;
+}
+/*달력버튼의 이미지*/
+.datepickerDiv_develop > img {
+  position: relative;
+  width: 19%;
+  display: inline-block;
+  z-index: 1;
+}
+
+/*날짜 Text 담는 Div*/
+.dateValueDiv_develop{
+  position: absolute;
+  width: 100%;
+  /*height: 110px;*/
+  top:10px;
+  /*left: 35%;*/
+  /*display: inline-block;*/
+}
+/*날짜 Text*/
+.dateValueP_develop{
+position: absolute;
+display: inline-block;
+width: 100%;
+font-size: 150%;
+font-weight: bold;
+text-align: center;
+color: #2C3E50;
+text-shadow: 2px 2px #aaaaaa;
+}
+
+
+/* ㅡㅡㅡㅡㅡ    선택원아 정보 관련  ㅡㅡㅡㅡㅡㅡ */
+/*원아 선택 버튼*/
+#tDevSelectChild{
+  position: absolute;
+  top: 60px;
+  width: 40px;
+  height: 95px;
+  background-color: #FF7012;
+  border-radius: 0 20% 20% 0%;
+}
+
+/* 원아선택 이라는 글씨*/
+#tDevSelectChild > p {
+  position: relative;
+  left: 9px;
+  font-weight: bold;
+}
+
+/* 슬라이드 형식으로 나올 패널*/
+#tDevSelectChildPanel{
+  position: absolute;
+  top: 5px;
+  width: 360px;
+  height: 545px;
+  background-color: #FFE9BB;
+  border-radius: 3%;
+  z-index: 3;
+
+}
+
+/* 패널 닫기 버튼 */
+#tDevSelectChildPanelCloseBtn{
+  position: relative;
+  top: 5px;
+  left: 315px;
+  width: 40px;
+  height: 40px;
+  background-color: #FFBFBF;
+  background-image: url('../img/xBtn.png');
+  background-size: 100%, 100%;
+}
+
+/* 패널 속 원아리스트*/
+#tDevSelectChildList{
+  position: relative;
+  top:15px;
+  left: 10px;
+  width: 340px;
+  height: 470px;
+  background-color: white;
+  border-radius: 3%;
+  overflow-y: scroll;
+}
+
+/*스크롤 바 보이지 않게 하기*/
+#tDevSelectChildList::-webkit-scrollbar{
+  display: none;
+}
+
+/*원아리스트 안 이름,사진 틀*/
+.selectImgAndNameDev{
+  position: relative;
+  /*top:5%;*/
+  left:5%;
+  width: 90%;
+  height: 100px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: 2px solid #FFB888;
+  /*background-color: #EAEAEA;*/
+  -webkit-box-shadow:0 2px 5px #FFB888;
+}
+
+/*리스트 사진틀*/
+.imageDivDev{
+  position: relative;
+  display: inline-block;
+  top:3px;
+  left:2%;
+  width:90px;
+  height: 90px;
+  border: 2px  #555555 solid;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+/*리스트 사진틀의 사진*/
+.imageDivDev > img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/*리스트 이름틀*/
+.NameDivDev{
+  position: absolute;
+  display: inline-block;
+  top:10%;
+  left:110px;
+  width: 170px;
+  height: 80%;
+  background-color: #555555;
+  -webkit-box-shadow:0 2px 3px #777;
+}
+
+
+.NameDivDev > div{
+  position: relative;
+  top:2%;
+  left: 1%;
+  width: 98%;
+  height:96%;
+  background-color: #FF812D;
+}
+
+/*리스트 이름*/
+.NameDivDev > div > p{
+  position: relative;
+  top:30%;
+  text-align: center;
+  text-shadow: 1px 1px #777777;
+  font-size: 110%;
+  font-weight: bold;
+}
+
+
+/**/
+  /*사진이름 틀*/
+#tDevelopChildInfo{
+  position: absolute;
+  top:65px;
+  left: 45px;
+  width: 260px;
+  height: 90px;
+  /*position: relative;
+  left:5%;
+  width: 90%;
+  top: 3%;*/
+  background-color: #FFB888;
+}
+
+.develop_ImageNameDiv{
+  position: absolute;
+  width: 320px;
+  height: 80px;
+}
+
+  /*사진*/
+.develop_ImageName{
+  position: relative;
+  left:3px;
+  top: 3px;
+  width: 80px;
+  height: 80px;
+  border: 2px black solid;
+  border-radius: 100%;
+}
+
+  /*이름 틀*/
+#tDevelopChildInfo > div > div{
+  position: absolute;
+  display: inline-block;
+  top:6px;
+  left:95px;
+  width: 150px;
+  height: 78px;
+  /*float: right;*/
+  /*margin-top: 3%;
+  margin-right: 7%;*/
+  /*padding: 7%;*/
+  background-color: #FF7012;
+  border-radius: 10%;
+}
+
+
+  /*이름 글씨*/
+#tDevelopChildInfo > div > div > p{
+  position: relative;
+  top:25px;
+  font-weight: bold;
+  font-size: 120%;
+  text-align: center;
+}
+
+/* 기능변경 버튼 */
+#tDevChangeModeBtn {
+ position: absolute;
+ top: 60px;
+ left: 320px;
+ width: 40px;
+ height: 95px;
+ background-color: #FF7012;
+ border-radius: 20% 0% 0% 20%;
+}
+
+/* 기능선택 이라는 글씨*/
+#tDevChangeModeBtn > p {
+  position: relative;
+  left: 12px;
+  font-weight: bold;
+}
+
+/* 슬라이드 형식으로 나올 패널*/
+#tDevChangeModePanel{
+  position: absolute;
+  top: 0px;
+  width: 360px;
+  height: 550px;
+  /*background-color: white;*/
+  /*border-radius: 3%;*/
+  z-index: 3;
+}
+
+/* 패널 닫기 버튼 */
+.tDevChangeModePanelCloseBtn{
+  position: relative;
+  top: 5px;
+  left: 315px;
+  width: 40px;
+  height: 40px;
+  /*background-color: #FFBFBF;*/
+  background-image: url('../img/xBtn.png');
+  background-size: 100%, 100%;
+}
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡ  구간 나누기 ㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
+    /* ㅡㅡㅡㅡㅡ    항목 관련  ㅡㅡㅡㅡㅡㅡ */
+
+
+
+  /*항목 틀 1*/
+#tDevelopCheckDiv1{
+  position: relative;
+  top:135px;
+  left: 10px;
+  width: 340px;
+  height: 300px;
+  border: 1px solid black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+#tDevelopCheckDiv1::-webkit-scrollbar{
+  display: none;
+}
+
+  /*항목 제목 Div*/
+.checkTitleDiv {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 316px;
+  height: auto;
+  /*border: 2px solid black;*/
+  border-radius: 5%;
+  margin-bottom: 3px;
+}
+
+  /*항목 제목 p*/
+.checkTitleDiv > pre{
+  /*text-align: center;*/
+  /*font-size: 135%;*/
+  font-size: 25px;
+  white-space: pre-line; /* CSS3*/
+  word-break: :keep-all;
+}
+
+  /*값div 를 가지고 있는 Div*/
+.checkValuesDiv{
+  position: relative;
+  top: 40px;
+  width: 340px;
+  height: 50px;
+  margin-bottom: 100px;
+}
+
+  /*값 div*/
+.checkValuesDiv > div {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  border: 2px solid #00B1F2;
+  border-radius: 10%;
+}
+
+.checkValuesDiv > div > p{
+  position: relative;
+  top: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 130%;
+
+}
+
+#openCheckDiv2Btn{
+  position: relative;
+  top: 120px;
+  left: 90px;
+  width: 180px;
+  height: 35px;
+  background-color: white;
+  border: 2px solid black;
+  margin-bottom: 20px;
+  z-index: 1;
+
+}
+
+#openCheckDiv2Btn > p{
+  position: relative;
+  top: 5px;
+  font-weight: bold;
+  font-size: 110%;
+  text-align: center;
+}
+
+#openCheckDiv1Btn{
+  position: relative;
+  top: 100px;
+  left: 90px;
+  width: 180px;
+  height: 35px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+#openCheckDiv1Btn > p{
+  position: relative;
+  top: 5px;
+  font-weight: bold;
+  font-size: 110%;
+  text-align: center;
+}
+
+    /* ㅡㅡㅡㅡㅡ    상태 관련 ㅡㅡㅡㅡㅡㅡ */
+
+#tDevelopCheckDiv2{
+  position: relative;
+  top: 130px;
+  left: 10px;
+  width: 330px;
+  height: 305px;
+  margin-bottom: 35px;
+  border: 1px solid black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #FFF1D3;
+}
+
+#tDevelopCheckDiv2 > div > p{
+  font-weight: bold;
+  font-size: 110%;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+#tDevelopCheckDiv2 > div > div{
+  border: 1px solid #296DA5;
+  border-radius: 15%;
+}
+
+#checkBoxDiv1{
+  position: absolute;
+  display: inline-block;
+  top:5px;
+  left: 5px;
+  width: 315px;
+  height: 65px;
+  border: 1px solid #F15F5F;
+  -webkit-box-shadow:0 2px 5px #555;
+  border-radius: 10%;
+  background-color: white;
+}
+
+#checkBoxDiv1 > p {
+  position: relative;
+  display: inline-block;
+  top: 15px;
+  /*background-color: ;*/
+  width: 80px;
+  height: 25px;
+  left: 10px;
+  margin-right: 20px;
+  text-align: center;
+  border-radius: 5px;
+
+}
+
+#checkBoxDiv1 > div {
+  position: relative;
+  display: inline-block;
+  top: 15px;
+  width: 40px;
+  border: 1px solid black;
+  padding: 4px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+#checkBoxDiv2{
+  position: absolute;
+  display: inline-block;
+  top:80px;
+  left: 5px;
+  width: 315px;
+  height: 65px;
+  border: 1px solid #FF90FF;
+  -webkit-box-shadow:0 2px 5px #555;
+  border-radius: 10%;
+  background-color: white;
+}
+
+#checkBoxDiv2 > p {
+  position: relative;
+  display: inline-block;
+  top: 15px;
+  width: 80px;
+  height: 25px;
+  left: 10px;
+  margin-right: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#checkBoxDiv2 > div {
+  position: relative;
+  display: inline-block;
+  top: 15px;
+  width: 40px;
+  border: 1px solid black;
+  padding: 4px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+#checkBoxDiv3{
+  position: absolute;
+  display: inline-block;
+  top:153px;
+  left: 5px;
+  width: 315px;
+  height: 65px;
+  border: 1px solid #FFBB00;
+  -webkit-box-shadow:0 2px 5px #555;
+  border-radius: 10%;
+  background-color: white;
+}
+
+#checkBoxDiv3 > p {
+  position: relative;
+  display: inline-block;
+  top: 15px;
+  width: 80px;
+  height: 25px;
+  left: 10px;
+  margin-right: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#checkBoxDiv3 > div {
+  position: relative;
+  display: inline-block;
+  top: 15px;
+  width: 40px;
+  border: 1px solid black;
+  padding: 4px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+#checkBoxDiv4{
+  position: absolute;
+  display: inline-block;
+  top:230px;
+  left: 5px;
+  width: 315px;
+  height: 65px;
+  border: 1px solid #6799FF;
+  -webkit-box-shadow:0 2px 5px #555;
+  border-radius: 10%;
+  background-color: white;
+}
+
+#checkBoxDiv4 > p {
+  position: relative;
+  display: inline-block;
+  top: 15px;
+  width: 80px;
+  height: 25px;
+  left: 10px;
+  margin-right: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#checkBoxDiv4 > div {
+  position: relative;
+  display: inline-block;
+  top: 15px;
+  width: 40px;
+  border: 1px solid black;
+  padding: 4px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+
+    /* ㅡㅡㅡㅡㅡ    버튼 관련  ㅡㅡㅡㅡㅡㅡ */
+
+
+#tDevelopCheckCancelSave{
+  position: relative;
+  top: 100px;
+  width: 90%;
+  left:5%;
+
+  /*border: 1px solid black;*/
+}
+
+
+
+/*취소버튼*/
+#tDevelopCheckCancelBtn{
+  position: relative;
+  /*display: inline-block;
+  margin-top:15%;*/
+  width: 80%;
+  border: 1px #777777 solid;
+  color: #555555;
+  /*text-align: center;*/
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*저장 버튼*/
+#tDevelopCheckSaveBtn{
+  position: relative;
+  width: 80%;
+  border: 2px #0F9865 solid;
+  /*text-align: center;*/
+  /*background-color: #BBBBBB;*/
+  background-color: #0F9865;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*취소,저장 버튼 글씨*/
+  #tDevelopCheckCancelBtn > p, #tDevelopCheckSaveBtn > p{
+  text-align: center;
+  font-size: 120%;
+}
+
+
+
+
+
+/*var changeModePanel = $("<div></div>").addClass("changeModePanel");
+var changeModePanelCloseBtn = $("<div></div>").addClass("changeModePanelCloseBtn");
+
+
+// 기능변경 버튼
+$("#tDevChangeModeBtn").unbind("click").bind("click", function(){
+    $(".changeModePanel").toggle("slide",{direction:"right"},350,null);
+
+    var argValues = new Array();
+    argValues.push(childID);
+    argValues.push(imageName);
+    argValues.push(childName);
+
+    // alert(childID);
+    // alert(imageName);
+    // alert(childName);
+
+    makeChangePanel(argValues);
+
+});
+
+$(".changeModePanelCloseBtn").unbind("click").bind("click", function(){
+    $(".changeModePanel").toggle("slide",{direction:"right"},350,null);
+});*/

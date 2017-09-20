@@ -1,0 +1,180 @@
+/*전반적인 틀*/
+#tAttendanceCheck{
+  position: absolute;
+  top:65px;
+  width: 100%;
+  height: 550px;
+  /*background-color: #DDE5F2;*/
+  background-color: white;
+}
+
+/*모두 출석 버튼*/
+#allCheckBtn{
+  position: absolute;
+  top:2%;
+  left: 70%;
+  width: 27%;
+  height: 7%;
+  background-color: #00B1F2;
+  border: 2px solid #296DA5;
+  border-radius: 5%;
+}
+
+#allCheckBtn > p{
+  position: relative;
+  text-align: center;
+  top: 7px;
+  /*font-size: 120%;*/
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 2px #aaaaaa;
+}
+
+/*원아 리스트Div*/
+#tAttendanceChildListDiv{
+  position: absolute;
+  top: 11%;
+  left:3%;
+  width: 93%;
+  height: 75%;
+  background-color: white;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+  /*원아 리스트Div 스크롤바 안보이게하기*/
+#tAttendanceChildListDiv::-webkit-scrollbar{
+  display: none;
+}
+
+  /*원아 이미지div, 이름div 를 담고있는 각원아의 틀*/
+#tAttendanceChildListDiv > div{
+  position: relative;
+  margin-top: 3%;
+  width: 100%;
+  height: 25%;
+  /*background-color: #82B4E4;*/
+  background-color: #FFDBF0;
+
+}
+
+  /*원아 이미지 담고있는 div*/
+.atd_imageDiv{
+  position: absolute;
+  top:5%;
+  left: 3%;
+  width: 25%;
+  height: 70%;
+  border-radius: 20%;
+}
+  /*원아 이미지*/
+.atd_imageDiv > img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+}
+
+  /*원아 이름 담고 있는 div*/
+.atd_NameDiv{
+  position: absolute;
+  top:75%;
+  left: 10px;
+  width: 25%;
+}
+
+  /* 원아 이름*/
+.atd_NameDiv > div > p{
+  position: relative;
+  left: 15px;
+  font-weight: bold;
+}
+
+/* 출석 버튼 */
+.tAttendance{
+  position: absolute;
+  top:14%;
+  left:32%;
+  width: 20%;
+  height: 72%;
+  background-color: white;
+  border: 2px solid #00B1F2;
+  border-radius: 20%;
+}
+
+/* 조퇴 버튼*/
+.tEarlyLeave{
+  position: absolute;
+  top:14%;
+  left:55%;
+  width: 20%;
+  height: 72%;
+  background-color: white;
+  /*border: 2px solid #FFFF68;*/
+  border: 2px solid gold;
+  border-radius: 20%;
+}
+
+/* 결석 버튼*/
+.tAbsence{
+  position: absolute;
+  top:14%;
+  left:78%;
+  width: 20%;
+  height: 72%;
+  background-color: white;
+  border: 2px solid #FF48FF;
+  border-radius: 20%;
+}
+
+.tAttendance > p, .tEarlyLeave > p, .tAbsence > p{
+  position: relative;
+  top: 30%;
+  font-weight: bold;
+  font-size: 120%;
+  text-align: center;
+}
+
+/*취소버튼*/
+#tAttendanceCancelBtn{
+  position: absolute;
+  top:90%;
+  left: 5%;
+  width: 40%;
+  height: 40px;
+  border-radius: 5%;
+  border: 1px solid #777777;
+  color: #555555;
+  /*background-color: #aaaaaa;*/
+  background-color: white;
+}
+
+#tAttendanceCancelBtn > p {
+  position: relative;
+  text-align: center;
+  top: 6px;
+  font-size: 120%;
+  /*font-weight: bold;*/
+}
+
+/*완료버튼*/
+#tAttendanceSaveBtn{
+  position: absolute;
+  top:90%;
+  left: 50%;
+  width: 40%;
+  height: 40px;
+  border-radius: 5%;
+  border: 1px solid #0F9865;
+  color: white;
+  /*background-color: #aaaaaa;*/
+  background-color: #0F9865;
+}
+
+#tAttendanceSaveBtn > p {
+  position: relative;
+  text-align: center;
+  top: 6px;
+  font-size: 120%;
+  /*font-weight: bold;*/
+}

@@ -1,0 +1,174 @@
+
+#tObservation{
+  position: absolute;
+  top:10%;
+  height: 70%;
+}
+
+  /*사진이름 틀*/
+#tObChildInfo{
+  position: relative;
+  top:5%;
+  left:5%;
+  width: 90%;
+  /*border: 2px red solid;*/
+  margin-top: 3%;
+  background-color: #DCE6F2;
+
+}
+
+  /*사진*/
+#tObChildInfo > div > img{
+  position: relative;
+  margin-top: 1%;
+  left:10%;
+  width:30%;
+  border: 2px black solid;
+  border-radius: 100%;
+}
+
+  /*이름 틀*/
+#tObChildInfo > div > div{
+  position: relative;
+  width: 30%;
+  float: right;
+  margin-top: 3%;
+  margin-right: 7%;
+  padding: 7%;
+  background-color: #4F81BD;
+  border-radius: 10%;
+
+}
+  /*이름 글씨*/
+#tObChildInfo > div > div > p{
+  position: relative;
+}
+
+  /*취소버튼*/
+#tObCancelBtn1{
+  position: relative;
+  display: inline-block;
+  margin-top:5%;
+  left:5%;
+  width: 30%;
+  border: 2px black solid;
+  text-align: center;
+  background-color: #BBBBBB;
+}
+
+  /*저장 버튼*/
+#tObSaveBtn1{
+  position: relative;
+  display: inline-block;
+  /*margin-top: 20%;*/
+  right: -30%;
+  width: 30%;
+  border: 2px black solid;
+  text-align: center;
+  background-color: #BBBBBB;
+
+}
+
+  /*취소,저장 버튼 글씨*/
+#tObCancelBtn1 > p, #tObSaveBtn1 > p{
+  text-align: center;
+  font-size: 120%;
+}
+
+  /*텍스트 메모*/
+#textMemo{
+  position: relative;
+  left:4%;
+  margin-top: 5%;
+  width: 90%;
+  border: 2px solid black;
+  font-size: 250%;
+
+}
+
+  /*그리기로 전환 버튼 공간*/
+#tObChangeDrawBtn{
+  position: absolute;
+  width: 100%;
+}
+  /*그리기로 전환버튼*/
+#tObChangeDrawBtn > img{
+  position: absolute;
+  left:78%;
+  width:20%;
+  /*height: 100%;*/
+  border: 2px solid black;
+}
+
+
+  /*그리기 캔버스*/
+#drawCanvas{
+  position: relative;
+  /*margin-top: 3%;*/
+  left:3%;
+  /*width:100%;*/
+  height: 80%;
+  border-top : 2px black solid;
+  border-bottom : 2px black solid;
+  /*background-color: #E4EFFE;*/
+}
+
+#tObDraw{
+  width: 95%;
+  height: 100%;
+}
+
+/*취소버튼*/
+#tObCancelBtn2{
+  position: relative;
+  display: inline-block;
+  margin-top:5%;
+  left:5%;
+  width: 30%;
+  border: 2px black solid;
+  text-align: center;
+  background-color: #BBBBBB;
+}
+
+/*저장 버튼*/
+#tObSaveBtn2{
+  position: relative;
+  display: inline-block;
+  /*margin-top: 20%;*/
+  right: -30%;
+  width: 30%;
+  border: 2px black solid;
+  text-align: center;
+  background-color: #BBBBBB;
+}
+
+/*취소,저장 버튼 글씨*/
+#tObCancelBtn2 > p, #tObSaveBtn2 > p{
+  text-align: center;
+  font-size: 120%;
+}
+
+#btnSave{
+  position: absolute;
+  margin-top: 10%;
+}
+
+#drawOptionsDiv{
+  position: relative;
+  left: 5%;
+}
+
+/*그리기로 전환 버튼 공간*/
+#tObChangeTextBtn{
+  position: absolute;
+  width: 100%;
+
+}
+/*그리기로 전환버튼*/
+#tObChangeTextBtn > img{
+  position: absolute;
+  left:78%;
+  width:20%;
+  /*height: 100%;*/
+  border: 2px solid black;
+}

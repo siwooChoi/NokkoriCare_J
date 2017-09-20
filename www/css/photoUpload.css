@@ -1,0 +1,352 @@
+#photoUpload{
+  position: absolute;
+  top:65px;
+  width: 360px;
+  height: 550px;
+  overflow: hidden;
+  /*background-color: #D9E5FF;*/
+  background-color: white;
+}
+
+
+/*원아 선택 버튼*/
+#tPhotoSelectChild{
+  position: absolute;
+  top: 5px;
+  width: 40px;
+  height: 100px;
+  background-color: #407EFF;
+  border-radius: 0 20% 20% 0%;
+}
+
+/* 원아선택 이라는 글씨*/
+#tPhotoSelectChild > p {
+  position: relative;
+  top:7px;
+  left: 9px;
+  font-weight: bold;
+}
+
+/* 슬라이드 형식으로 나올 패널*/
+#tPhotoSelectChildPanel{
+  position: absolute;
+  top: 5px;
+  width: 360px;
+  height: 545px;
+  background-color: #8EB3FF;
+  border-radius: 3%;
+  z-index: 3;
+
+}
+
+/* 패널 닫기 버튼 */
+#tPhotoSelectChildPanelCloseBtn{
+  position: relative;
+  top: 5px;
+  left: 315px;
+  width: 40px;
+  height: 40px;
+  /*background-color: #FFBFBF;*/
+  background-image: url('../img/xBtn.png');
+  background-size: 100%, 100%;
+}
+
+/* 패널 속 원아리스트*/
+#tPhotoSelectChildList{
+  position: relative;
+  top:15px;
+  left: 10px;
+  width: 340px;
+  height: 470px;
+  background-color: white;
+  border-radius: 3%;
+  overflow-y: scroll;
+}
+
+/*스크롤 바 보이지 않게 하기*/
+#tPhotoSelectChildList::-webkit-scrollbar{
+  display: none;
+}
+
+/*원아리스트 안 이름,사진 틀*/
+.selectImgAndNamePhoto{
+  position: relative;
+  /*top:5%;*/
+  left:5%;
+  width: 90%;
+  height: 100px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: 2px solid #407EFF;
+  /*background-color: #EAEAEA;*/
+  -webkit-box-shadow:0 2px 5px #407EFF;
+}
+
+/*리스트 사진틀*/
+.imageDivPhoto{
+  position: relative;
+  display: inline-block;
+  top:3px;
+  left:2%;
+  width:90px;
+  height: 90px;
+  border: 2px  #555555 solid;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+/*리스트 사진틀의 사진*/
+.imageDivPhoto > img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/*리스트 이름틀*/
+.NameDivPhoto{
+  position: absolute;
+  display: inline-block;
+  top:10%;
+  left:110px;
+  width: 170px;
+  height: 80%;
+  background-color: #555555;
+  -webkit-box-shadow:0 2px 3px #777;
+}
+
+
+.NameDivPhoto > div{
+  position: relative;
+  top:2%;
+  left: 1%;
+  width: 98%;
+  height:96%;
+  background-color: #407EFF;
+}
+
+/*리스트 이름*/
+.NameDivPhoto > div > p{
+  position: relative;
+  top:30%;
+  text-align: center;
+  text-shadow: 1px 1px #777777;
+  font-size: 110%;
+  font-weight: bold;
+}
+
+
+ /* 기능변경 버튼 */
+#tPhoUpChangeModeBtn {
+  position: absolute;
+  top: 7px;
+  left: 320px;
+  width: 40px;
+  height: 95px;
+  background-color: #407EFF;
+  border-radius: 20% 0% 0% 20%;
+}
+
+/* 기능선택 이라는 글씨*/
+#tPhoUpChangeModeBtn > p {
+  position: relative;
+  left: 12px;
+  font-weight: bold;
+}
+
+
+/* 슬라이드 형식으로 나올 패널*/
+#tPhoUpChangeModePanel{
+  position: absolute;
+  top: 0px;
+  width: 360px;
+  height: 555px;
+  /*background-color: white;*/
+  /*border-radius: 3%;*/
+  z-index: 3;
+
+
+}
+
+/* 패널 닫기 버튼 */
+.tPhoUpChangeModePanelCloseBtn{
+  position: relative;
+  top: 5px;
+  left: 315px;
+  width: 40px;
+  height: 40px;
+  /*background-color: #FFBFBF;*/
+  background-image: url('../img/xBtn.png');
+  background-size: 100%, 100%;
+}
+
+
+
+
+
+/*사진이름 틀*/
+#photoUpload_childBox_div{
+position: relative;
+top:10px;
+left:48px;
+width: 270px;;
+height: 92px;
+/*border: 2px red solid;*/
+/*margin-top: 3%;*/
+
+}
+
+#photoUpload_childBox_div > div{
+  position: relative;
+  width: 305px;
+  height: 92px;
+  background-color: #B2CCFF;
+}
+
+/*사진*/
+#photoUpload_childBox_div > div > img{
+position: relative;
+margin-top: 3px;
+width:80px;
+height: 80px;
+left:5px;
+border: 2px black solid;
+border-radius: 20%;
+}
+
+/*이름 틀*/
+#photoUpload_childBox_div > div > div{
+position: absolute;
+display: inline-block;
+top:8px;
+left:95px;
+width: 170px;
+height: 74px;
+/*padding: 5%;*/
+background-color: #6799FF;
+border-radius: 10%;
+
+}
+/*이름 글씨*/
+#photoUpload_childBox_div > div > div > p{
+position: relative;
+top:23px;
+text-align: center;
+font-size: 120%;
+font-weight: bold;
+}
+
+/*이미지 메모 텍스트 Div*/
+#photoMemoDiv{
+  position: absolute;
+  top:110px;
+  left: 18px;
+}
+
+/*이미지 메모 텍스트 */
+#photoMemo{
+  position: relative;
+  /*left:4%;*/
+  /*margin-top:3%;*/
+  width: 324px;
+  border: 2px solid black;
+  font-size: 200%;
+}
+
+  /*사진 촬영하기 버튼*/
+#takePictureBtn{
+  position: absolute;
+  top: 242px;
+  left: 28px;
+  width: 150px;
+  height: 38px;
+  border: 2px solid #111111;
+  /*background-color: white;*/
+  background-color: #D9E5FF;
+
+}
+
+/*사진 촬영하기 버튼의 글씨*/
+#takePictureBtn > p{
+  position: relative;
+  top:7px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*앨범에서 이미지찾기 버튼*/
+#getGalleryBtn{
+  position: absolute;
+  top: 242px;
+  left: 180px;
+  width: 150px;
+  height: 38px;
+  border: 2px solid #111111;
+  /*background-color: white;*/
+  background-color: #F0EBFF;
+}
+
+/*앨범에서 이미지찾기 버튼의 글씨*/
+#getGalleryBtn > p{
+  position: relative;
+  top:7px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+/*선택한 이미지 뷰*/
+.GalleryImageView{
+  position: absolute;
+  top: 290px;
+  left: 36px;
+  width: 288px;
+  height: 193px;
+  background-color: white;
+  border: solid 1px black;
+}
+
+/*취소 버튼*/
+#photoUploadCancelBtn{
+  position: absolute;
+  top:495px;
+  left: 18px;
+  width: 148px;
+  height: 35px;
+  border: 1px solid #777777;
+  color: #555555;
+  background: white;
+}
+
+#photoUploadCancelBtn > p {
+  position: relative;
+  top:3px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*저장 버튼*/
+#photoUploadBtn{
+  position: absolute;
+  /*display: inline-block;*/
+  top:495px;
+  left: 187px;
+  width: 148px;
+  height: 35px;
+  border: 1px solid 0F9865;
+  /*background: white;*/
+  color: white;
+  background-color: #0F9865;
+}
+
+#photoUploadBtn > p {
+  position: relative;
+  top:3px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}

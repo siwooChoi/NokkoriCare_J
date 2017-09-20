@@ -1,0 +1,59 @@
+#photoUpload{
+  position: absolute;
+  top:10%;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  background-color: #D9E5FF;
+}
+
+
+
+/*사진이름 틀*/
+#photoUpload_childBox_div{
+position: relative;
+top:5%;
+left:5%;
+width: 90%;
+height: 15%;
+/*border: 2px red solid;*/
+/*margin-top: 3%;*/
+
+}
+
+#photoUpload_childBox_div > div{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #B2CCFF;
+}
+/*사진*/
+#photoUpload_childBox_div > div > img{
+position: relative;
+margin-top: 1%;
+width:30%;
+height: 80%;
+left:2%;
+border: 2px black solid;
+border-radius: 100%;
+}
+
+/*이름 틀*/
+#photoUpload_childBox_div > div > div{
+position: absolute;
+display: inline-block;
+top:10%;
+left:35%;
+width: 62%;
+height: 80%;
+/*padding: 5%;*/
+background-color: #6799FF;
+border-radius: 10%;
+
+}
+/*이름 글씨*/
+#photoUpload_childBox_div > div > div > p{
+position: relative;
+top:35%;
+text-align: center;
+}

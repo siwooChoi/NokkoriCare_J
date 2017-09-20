@@ -1,0 +1,1355 @@
+
+#ICheck{
+  position: absolute;
+  top:65px;
+  width: 100%;
+  height: 550px;
+  /*height: 100%;*/
+  /*background-color: #FFFFE0;*/
+  background-color: white;
+  overflow: hidden;
+}
+
+  /*달력버튼*/
+.datepickerDiv{
+  position: relative;
+  left:-2%;
+  width: 100%;
+  height: 60px;
+}
+  /*달력버튼의 이미지*/
+.datepickerDiv > img {
+    position: relative;
+    width: 19%;
+    display: inline-block;
+    z-index: 1;
+}
+
+
+
+  /*날짜 Text 담는 Div*/
+.dateValueDiv{
+    position: absolute;
+    width: 100%;
+    /*height: 110px;*/
+    top:10px;
+    /*left: 35%;*/
+    /*display: inline-block;*/
+}
+  /*날짜 Text*/
+.dateValueP{
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  color: #2C3E50;
+  text-shadow: 2px 2px #aaaaaa;
+}
+
+  /*조회버튼 Div*/
+/*#dateSetBtn{
+  position: absolute;
+  display: inline-block;
+  top:7%;
+  left: 65%;
+  width: 20%;
+  height: 30%;
+  background-color: #aaaaaa;
+  border: 2px solid white;
+  -webkit-box-shadow:0 2px 5px #555;
+}*/
+  /*조회버튼 Text*/
+/*#dateSetText{
+  position: relative;
+  text-align: center;
+  top:20%;
+  color: white;
+  font-weight: bold;
+}*/
+
+
+/*버튼3개를 담고있는 div*/
+#modeBtns{
+  position: absolute;
+  top:55px;
+  left: 190px;
+  width: 270px;
+  height: 55px;
+
+}
+
+
+/*각 버튼 3개 크기 지정*/
+#modeBtns > div{
+  position: relative;
+  left: -50px;
+  width: 70px;
+  height: 55px;
+}
+
+
+
+  /*알림내용 버튼*/
+#tICheck_Notification_btn{
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  /*left: 10px;*/
+  background-color: white;
+  /*box-shadow:3 3px 4px black;
+  -moz-box-shadow:0 1px 4px #888;*/
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+#tICheck_Notification_btn > div{
+  position: relative;
+  top: 2px;
+  left: 2px;
+  width:66px;
+  height: 51px;
+  background-color: #FF5E00;
+
+  /*color: white;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #555;*/
+  /*line-height: 350%;*/
+}
+
+  /*발달사항 버튼*/
+#tICheck_DevelopGraph_btn{
+  position: relative;
+  display: inline-block;
+  left:5px;
+  background-color: white;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+#tICheck_DevelopGraph_btn > div{
+  position: relative;
+  top: 2px;
+  left: 2px;
+  width: 66px;
+  height: 51px;
+  background-color: #FFCA6C;
+
+  /*color: white;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #555;*/
+  /*line-height: 350%;*/
+}
+
+
+  /*특이사항 버튼*/
+#tICheck_Significant_btn{
+  position: relative;
+  display: inline-block;
+  left:10px;
+  background-color: white;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+#tICheck_Significant_btn > div{
+  position: relative;
+  top: 2px;
+  left: 2px;
+  width: 66px;
+  height: 51px;
+  background-color: #FFCA6C;
+}
+
+
+#modeBtns > div > div > p{
+  position: relative;
+  top: 10%;
+  left: 0px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #555;
+}
+
+
+
+/*탑메뉴 아래의 전체*/
+#tICheckMain{
+ position: absolute;
+ top:110px;
+ width: 360px;
+ height: 440px;
+
+}
+
+#tICheckMain > div{
+  position: absolute;
+  display: inline-block;
+}
+
+/**/
+#tICheck_childBox_div{
+  position: absolute;
+  /*display: inline-block;*/
+  top:60px;
+  left: 75px;
+  width: 90px;
+  height: 110px;
+  /*border: 1px black solid;*/
+  /*z-index: 1;*/
+}
+
+
+/*원아 선택 버튼*/
+#tIChSelectChild{
+  position: absolute;
+  top: 67px;
+  width: 40px;
+  height: 95px;
+  background-color: #FFE031;
+  border-radius: 0 20% 20% 0%;
+  z-index: 1;
+}
+
+/* 원아선택 이라는 글씨*/
+#tIChSelectChild > p {
+  position: relative;
+  left: 12px;
+  font-weight: bold;
+}
+
+/* 슬라이드 형식으로 나올 패널*/
+#tIChSelectChildPanel{
+  position: absolute;
+  top: 5px;
+  width: 360px;
+  height: 545px;
+  background-color: #FFF4BB;
+  border-radius: 3%;
+  z-index: 3;
+}
+
+/* 패널 닫기 버튼 */
+#tIChSelectChildPanelCloseBtn{
+  position: relative;
+  top: 5px;
+  left: 315px;
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/xBtn.png');
+  background-size: 100% 100%;
+}
+
+/* 패널 속 원아리스트*/
+#tIChSelectChildList{
+  position: relative;
+  top:15px;
+  left: 10px;
+  width: 340px;
+  height: 470px;
+  background-color: white;
+  border-radius: 3%;
+  overflow-y: scroll;
+}
+
+/*스크롤 바 보이지 않게 하기*/
+#tIChSelectChildList::-webkit-scrollbar{
+  display: none;
+}
+
+/*원아리스트 안 이름,사진 틀*/
+.selectImgAndNameICh{
+  position: relative;
+  /*top:5%;*/
+  left:5%;
+  width: 90%;
+  height: 100px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: 2px solid #FFC90E;
+  background-color: white;
+  -webkit-box-shadow:0 2px 5px #FFC90E;
+}
+
+/*리스트 사진틀*/
+.imageDivICh{
+  position: relative;
+  display: inline-block;
+  top:3px;
+  left:2%;
+  width:90px;
+  height: 90px;
+  border: 2px #555555 solid;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+
+
+
+
+/*리스트 사진틀의 사진*/
+.imageDivICh > img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
+
+
+
+/*리스트 이름틀*/
+.NameDivICh {
+  position: absolute;
+  display: inline-block;
+  top:10%;
+  left:110px;
+  width: 170px;
+  height: 80%;
+  -webkit-box-shadow:0 2px 3px #555;
+}
+
+.NameDivICh > div{
+  position: relative;
+  top:2%;
+  left: 1%;
+  width: 98%;
+  height:96%;
+  background-color: #FFBB00;
+}
+
+/*리스트 이름*/
+.NameDivICh > div > p{
+  position: relative;
+  top:30%;
+  text-align: center;
+  text-shadow: 1px 1px #777777;
+  font-size: 110%;
+  font-weight: bold;
+}
+/**/
+
+/* 기능변경 버튼 */
+#tIChChangeModeBtn {
+ position: absolute;
+ top: 60px;
+ left: 320px;
+ width: 40px;
+ height: 95px;
+ /*background-color: #FF7012;*/
+ background-color: gold;
+ border-radius: 20% 0% 0% 20%;
+ z-index: 2;
+}
+
+/* 기능선택 이라는 글씨*/
+#tIChChangeModeBtn > p {
+  position: relative;
+  left: 12px;
+  font-weight: bold;
+}
+
+/* 슬라이드 형식으로 나올 패널*/
+#tIChChangeModePanel{
+  position: absolute;
+  top: 0px;
+  width: 360px;
+  height: 555px;
+  /*background-color: white;*/
+  /*border-radius: 3%;*/
+  z-index: 3;
+}
+
+/* 패널 닫기 버튼 */
+.tIChChangeModePanelCloseBtn{
+  position: relative;
+  top: 5px;
+  left: 315px;
+  width: 40px;
+  height: 40px;
+  /*background-color: #FFBFBF;*/
+  background-image: url('../img/xBtn.png');
+  background-size: 100%, 100%;
+}
+
+
+
+
+  /*원아 사진,이름 담고있는 div*/
+.tICheck_childBox{
+  position: relative;
+  left: -30px;
+  width: 90px;
+  height: 110px;
+  /*background-color: gray;*/
+}
+
+  /*원아 사진 담고있는 div*/
+.tICheck_imgsDiv{
+  position: relative;
+  width: 90px;
+  height:88px;
+  /*border: 2px black solid;*/
+}
+
+  /*원아 사진 img*/
+.tICheck_imgsDiv > img{
+  position: relative;
+  width: 90px;
+  height: 88px;
+  border: 2px black solid;
+}
+
+  /*원아 이름 담고있는 div*/
+.tICheck_namesDiv{
+  position: relative;
+  top:5%;
+  width: 90px;
+  height:22px;
+  border: 1px solid  #aaaaaa;;
+  background-color: #FEFE00;
+}
+
+  /*원아이름 글씨*/
+.tICheck_namesDiv > p {
+  position: relative;
+  text-align: center;
+  width: 90px;
+  height: 22px;
+
+}
+
+
+/* 슬라이드 형식으로 나올 패널*/
+#tIChChangeModePanel{
+  position: absolute;
+  top: 0px;
+  width: 360px;
+  height: 555px;
+  background-color: white;
+  /*border-radius: 3%;*/
+  z-index: 3;
+}
+
+/* 패널 닫기 버튼 */
+.tIChChangeModePanelCloseBtn{
+  position: relative;
+  top: 5px;
+  left: 315px;
+  width: 40px;
+  height: 40px;
+  /*background-color: #FFBFBF;*/
+  background-image: url('../img/xBtn.png');
+  background-size: 100%, 100%;
+}
+
+  /*모드 화면*/
+#modeContents{
+  display: inline-block;
+  top:22px;
+  left: 20px;
+  width: 340px;
+  height: 405px;
+  /*background-color: #dddddd;*/
+}
+
+
+  /*알림내용 타이틀 div*/
+.notification_divTitle{
+  position: relative;
+  left: 120px;
+  width: 165px;
+  height: 50px;
+  border: 2px solid white;
+  /*background: #FF5E00;*/
+  background: gold;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+  /*알림내용 글씨*/
+.notification_divTitle > p {
+  position: relative;
+  top: 10px;
+  font-size: 120%;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*알림내용 div*/
+.notification_div{
+position: relative;
+/*top:15%;*/
+left: 30px;
+width: 300px;
+height: 350px;
+overflow-x: hidden;
+overflow-y: scroll;
+border: 2px solid gold;
+/*background: white;*/
+background-color: #FFFFF0;
+}
+
+/*알림내용 div 스크롤 바 보이지 않게 하기*/
+.notification_div::-webkit-scrollbar{
+display: none;
+}
+
+
+/*알림장 이미지 들어갈 div*/
+.notification_imageDiv1{
+  position: relative;
+  top: 5px;
+  left:50px;
+  width: 200px;
+  /*height: 162px;*/
+  height: auto;
+  /*border: 1px solid black;*/
+}
+.notification_imageDiv2{
+  position: relative;
+  top: 5px;
+  left:50px;
+  width: 200px;
+  height: auto;
+  /*border: 1px solid black;*/
+}
+
+/*알림장 이미지*/
+.notification_imageDiv1Img{
+  position: relative;
+  width: 200px;
+  height: 162px;
+}
+
+.notification_noImageDiv1Img{
+  position: relative;
+  width: 200px;
+  height: 162px;
+}
+
+
+ .notification_imageDiv2Img{
+   position: relative;
+   width: 200px;
+   height: 162px;
+ }
+
+
+
+  /*알림장 제목 들어갈 공간*/
+.notification_textTitleDiv1{
+  /*position: relative;
+  width: 210px;
+  left: 20px;
+  height: 30px;*/
+  position: relative;
+  top: 5px;
+  left:20px;
+  width: 260px;
+  height: auto;
+  margin-bottom: 10px;
+  background-color: white;
+  /*border: black solid 1px;*/
+  text-align: center;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+.notification_textTitleDiv1 > pre{
+  position: relative;
+  width: 260px;
+  height: auto;
+  font-size: 20px;
+}
+
+
+/*알림장 텍스트 들어갈 div*/
+.notification_textDiv1 {
+  position: relative;
+  top: 15px;
+  left: 20px;
+  width:210px;
+  height: 160px;
+  background-color: white;
+  /*border: 1px solid black;*/
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+
+.notification_textDiv2 {
+  position: relative;
+  top: 15px;
+  left: 20px;
+  width:210px;
+  height: 160px;
+  /*border: 2px solid black;*/
+}
+
+/*알림장 텍스트 보기*/
+.notification_pre{
+  position: relative;
+  width: 210px;
+  height: 150px;
+  font-size: 15px;
+  overflow-y: scroll;
+  white-space: pre-wrap; /* CSS3*/
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-all; /* Internet Explorer 5.5+ */
+}
+/*알림장 텍스트보기 스크롤 숨기기*/
+.notification_pre::-webkit-scrollbar{
+  display: none;
+}
+
+.notification_textTitlearea{
+  position: relative;
+  width: 210px;
+  height: 30px;
+  font-size: 15px;
+
+}
+
+/* 알림장 작성하기*/
+.notification_textarea{
+  position: relative;
+  width: 255px;
+  height: 150px;
+  font-size: 15px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/*알림장 작성하기 스크롤 숨기기*/
+.notification_textarea::-webkit-scrollbar{
+  display: none;
+}
+
+/*알림장 작성 버튼*/
+.notification_createBtn{
+  position: relative;
+  /*top: 281px;*/
+  top: -40px;
+  left: 236px;
+  width: 60px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+  /*작성버튼 글씨*/
+.notification_createBtn > p{
+  position: relative;
+  font-weight: bold;
+  top: 10px;
+  font-size: 120%;
+  text-align: center;
+}
+
+
+.notification_saveCancelBtnDiv{
+  position: relative;
+  top: 65px;
+  left: 150px;
+  width: 130px;
+  height: 65px;
+  /*border: 2px solid blue;*/
+}
+
+/*알림장 저장 버튼*/
+.notification_saveBtn{
+  position: relative;
+  /*top: 10px;*/
+  display: inline-block;
+  left: 5px;
+  width: 60px;
+  height: 50px;
+  border: 1px solid #aaaaaa;
+  background-color: white;
+}
+
+/*알림장 저장 글씨*/
+.notification_saveBtn > p{
+  position: relative;
+  font-weight: bold;
+  top: 10px;
+  font-size: 120%;
+  text-align: center;
+}
+
+
+/*알림장 취소 버튼*/
+.notification_cancelBtn{
+  position: relative;
+  /*top: 10px;*/
+  display: inline-block;
+  /*left: 174px;*/
+  width: 60px;
+  height: 50px;
+  border: 1px solid #aaaaaa;
+  background-color: white;
+}
+
+/*알림장 취소 글씨*/
+.notification_cancelBtn > p{
+  position: relative;
+  font-weight: bold;
+  top: 10px;
+  font-size: 120%;
+  text-align: center;
+}
+
+
+/* 텍스트메모 보기 버튼*/
+.notification_showTextMemoBtn{
+  position: absolute;
+  top: 80px;
+  left: -25px;
+  width: 40px;
+  height: 90px;
+  background-color: skyblue;
+  border-radius: 15%;
+}
+
+.notification_showTextMemoBtn > p{
+  text-align: center;
+  font-weight: bold;
+}
+
+/* 텍스트메모 보기 Div*/
+.showTextMemoDiv{
+  position: absolute;
+  top: 80px;
+  left: -20px;
+  width: 320px;
+  height: 290px;
+  border: 2px solid #aaaaaa;
+  background-color: white;
+  z-index: 1;
+}
+
+
+/*이미지 메모 작성 날짜 틀*/
+.showTextDateTitle{
+  position: absolute;
+  top: 2px;
+  left:2px;
+  width: 281px;
+  height: 33px;
+  /*border: 1px solid black;*/
+}
+
+/* 메모 날짜 글씨 */
+.showTextDateTitle > p{
+  position: relative;
+  top: 2px;
+  text-align: center;
+  font-size: 120%;
+}
+
+
+/* 텍스트메모 닫기 버튼*/
+.TextMemoCloseBtn{
+  position: absolute;
+  top: 2px;
+  left: 283px;
+  width:34px;
+  height: 33px;
+  /*border: 2px solid black;*/
+  /*background-color: gray;*/
+  background-image: url('../img/xBtn.jpg');
+  background-size: 100%, 100%;
+
+}
+
+/*텍스트 메모 틀*/
+.showTextMemo{
+  position: relative;
+  top: 40px;
+  left: 5px;
+  width: 309px;
+  height: 244px;
+  border: 1px solid #aaaaaa;
+  background-color: white;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 2;
+}
+
+/* 텍스트 메모들*/
+.showTextMemo > p{
+  position: relative;
+  font-size: 120%;
+  text-align: center;
+}
+
+/*텍스트메모 스크롤바 숨기기*/
+.showTextMemo::-webkit-scrollbar{
+  display: none;
+}
+
+
+/* 이미지메모 보기 버튼*/
+.notification_showImageMemoBtn{
+  position: absolute;
+  top: 180px;
+  left: -25px;
+  width: 40px;
+  height: 90px;
+  background-color: skyblue;
+  border-radius: 15%;
+}
+
+.notification_showImageMemoBtn > p{
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+/* 이미지메모 보기 Div*/
+.showImageMemoDiv{
+  position: absolute;
+  top: 80px;
+  left: -20px;
+  width: 320px;
+  height: 290px;
+  border: 2px solid #aaaaaa;
+  background-color: white;
+  z-index: 1;
+}
+
+/*이미지 메모 작성 날짜 틀*/
+.showImageDateTitle{
+  position: absolute;
+  top: 2px;
+  left:2px;
+  width: 281px;
+  height: 33px;
+  /*border: 1px solid black;*/
+}
+
+/* 메모 날짜 글씨 */
+.showImageDateTitle > p{
+  position: relative;
+  top: 2px;
+  text-align: center;
+  font-size: 120%;
+}
+
+/* 이미지메모 닫기 버튼*/
+.ImageMemoCloseBtn{
+  position: absolute;
+  top: 2px;
+  left: 283px;
+  width:34px;
+  height: 33px;
+  /*border: 2px solid black;
+  background-color: gray;*/
+  background-image: url('../img/xBtn.jpg');
+  background-size: 100%, 100%;
+}
+
+/*이미지 메모 틀*/
+.showImageMemo{
+  position: relative;
+  top: 40px;
+  left: 5px;
+  width: 309px;
+  height: 244px;
+  border: 1px solid #aaaaaa;
+  background-color:white;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 2;
+}
+
+ /*이미지 메모들 틀*/
+.showImageMemo > div {
+  position: relative;
+  top: 3px;
+  left:3px;
+  width: 302px;
+  height: : 237px;
+  border: 1px solid black;
+}
+
+.showImageMemo > div > img{
+  position: relative;
+  width: 302px;
+  height: 237px;
+}
+
+/*이미지 메모 스크롤바 숨기기*/
+.showImageMemo::-webkit-scrollbar{
+  display: none;
+}
+
+
+/* 앨범 추가 보기 버튼*/
+.notification_showAddAlbumBtn{
+  position: absolute;
+  top: 300px;
+  left: -25px;
+  width: 40px;
+  height: 90px;
+  background-color: #8041D9;
+  border-radius: 15%;
+}
+
+.notification_showAddAlbumBtn > p{
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+/* 앨범 추가 보기 Div*/
+.showAddAlbumDiv{
+  position: absolute;
+  top: 100px;
+  left: -20px;
+  width: 320px;
+  height: 290px;
+  border: 2px solid #aaaaaa;
+  background-color: white;
+  z-index: 1;
+}
+
+/*앨범 추가 작성 날짜 틀*/
+.showImageDateTitle{
+  position: absolute;
+  top: 2px;
+  left:2px;
+  width: 281px;
+  height: 33px;
+  /*border: 1px solid black;*/
+}
+
+/* 메모 날짜 글씨 */
+.showImageDateTitle > p{
+  position: relative;
+  top: 2px;
+  text-align: center;
+  font-size: 120%;
+}
+
+/* 앨범 추가 닫기 버튼*/
+.AddAlbumCloseBtn{
+  position: absolute;
+  top: 2px;
+  left: 283px;
+  width:34px;
+  height: 33px;
+  /*border: 2px solid black;
+  background-color: gray;*/
+  background-image: url('../img/xBtn.jpg');
+  background-size: 100%, 100%;
+}
+
+/*앨범 추가 틀*/
+.showAddAlbum{
+  position: relative;
+  top: 40px;
+  left: 5px;
+  width: 309px;
+  height: 244px;
+  border: 1px solid #aaaaaa;
+  background-color:white;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 2;
+}
+
+ /*앨범 추가들 틀*/
+.showAddAlbum > div {
+  position: relative;
+  top: 3px;
+  left:3px;
+  width: 302px;
+  height: : 237px;
+  border: 1px solid black;
+}
+
+.showAddAlbum > div > img{
+  position: relative;
+  width: 302px;
+  height: 237px;
+}
+
+/*앨범 추가 스크롤바 숨기기*/
+.showAddAlbum::-webkit-scrollbar{
+  display: none;
+}
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+  /*댓글 보기 버튼*/
+.showCommentsBtn{
+  position: absolute;
+  top: 300px;
+  left: -25px;
+  width: 40px;
+  height: 90px;
+  background-color: #8041D9;
+  border-radius: 15%;
+}
+
+
+.showCommentsBtn > p{
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/*알림내용의 댓글 div*/
+.notification_commentsDiv{
+  position: absolute;
+  bottom: -13px;
+  left: 20px;
+  width:312px;
+  height: 250px;
+  border: 2px solid green;
+  background-color: white;
+  z-index: 700;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.notification_commentsDiv::-webkit-scrollbar{
+  display: none;
+}
+
+/*댓글 보여주는 div*/
+.viewUploadedComment_div{
+position: relative;
+width: 312px;
+height: 200px;
+overflow-x: hidden;
+overflow-y: scroll;
+/*overflow: auto;*/
+}
+/*댓글 보여주는 div 스크롤바 없애기*/
+.viewUploadedComment_div::-webkit-scrollbar{
+  display: none;
+}
+
+/*교사타이틀, 교사댓글를 포함한 Div*/
+.teacherCommentBox{
+position: relative;
+top:10px;
+}
+
+/*교사 타이틀*/
+.teacherTrue1{
+position: relative;
+width: 124px;
+left: 10px;
+border-radius: 20%;
+background-color: pink;
+text-align: center;
+}
+
+/*교사 댓글*/
+.teacherCommentBox > p{
+position: relative;
+left: 10px;
+margin-bottom: 10px;
+}
+
+
+/*학부모타이틀, 학부모댓글를 포함한 Div*/
+.parentCommentBox{
+position: relative;
+  width: 312px;
+}
+
+/*학부모 타이틀*/
+.teacherTrue0{
+position: relative;
+width: 124px;
+left: 171px;
+border-radius: 20%;
+background-color: skyblue;
+text-align: center;
+}
+
+/*학부모 댓글*/
+.parentCommentBox > p{
+position: relative;
+left:124px;
+margin-bottom: 10px;
+}
+
+
+/*댓글작성 버튼 div*/
+.uploadComment_div{
+position: relative;
+top: 15px;
+left: 230px;
+width: 75px;
+height: 30px;
+border: 1px black solid;
+}
+
+/*댓글 작성버튼의 글씨*/
+.uploadComment_div > p{
+position: relative;
+font-weight: bold;
+top: 5px;
+text-align: center;
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+/*.notifiCommentInput_div > * {
+  position: absolute;
+}*/
+
+  /*댓글 입력 input*/
+/*.notifiCommentInput{
+  border: none;
+}*/
+
+
+  /* 평가항목 그래프 보기 버튼*/
+.valueGraphDiv1Btn{
+  position: absolute;
+  top: 140px;
+  left: 0px;
+  width: 30px;
+  height: 115px;
+  background-color: #FFBB00;
+  border-radius: 15% 0% 0% 15%;
+}
+
+.valueGraphDiv1Btn > p{
+  text-align: center;
+  font-weight: bold;
+}
+
+  /* 상태 그래프 보기 버튼*/
+.valueGraphDiv2Btn{
+  position: absolute;
+  top: 270px;
+  left: 0px;
+  width: 30px;
+  height: 115px;
+  background-color: #FFE08C;
+  border-radius: 15% 0% 0% 15%;
+}
+
+.valueGraphDiv2Btn > p{
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+
+  /*발달사항 그래프 div1*/
+.developGraph_div1{
+  position: relative;
+  left: 120px;
+  width: 165px;
+  height: 50px;
+  /*border: 2px solid gold;
+  background: #FFA2FF;*/
+  border: 2px solid white;
+  /*background: #FF5E00;*/
+  background-color: orange;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+.developGraph_div1 > p{
+  position: relative;
+  top: 10px;
+  font-size: 120%;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+  /*발달사항 그래프div2*/
+.developGraph_div2{
+  position: relative;
+  left: 30px;
+  width: 300px;
+  height: 350px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: 2px solid orange;
+  background: white;
+  background-color: #FFFFE0;
+}
+
+.developGraph_div2::-webkit-scrollbar{
+display: none;
+}
+
+.developGraph_div2_Name > p{
+  position: relative;
+  top: 10px;
+  text-align: center;
+}
+
+  /*그래프 들이 들어있는 Div*/
+.valueGraphDiv1{
+  position: relative;
+  top:4px;
+  left:13px;
+  width:270px;
+  height: 336px;
+  border: 2px solid #bbbbbb;
+  -webkit-box-shadow:0 2px 2px #555;
+  overflow-y: scroll;
+  background-color: white;
+}
+
+.valueGraphDiv1::-webkit-scrollbar{
+  display: none;
+}
+
+  /*체크 없음을 알리는 메시지*/
+.valueGraphDiv1 > div{
+  position: relative;
+  text-align: center;
+}
+
+.developValueDiv{
+  position: relative;
+  width: 100%;
+  height: 15%;
+}
+  /*그래프 값*/
+.ui-progressbar-value{
+  position: relative;
+  background-color: #fdfa88;
+}
+
+  /*그래프 틀 */
+.ui-progressbar {
+  position: relative;
+}
+
+
+.developValueDiv{
+  position: relative;
+  margin-bottom: 2%;
+  width: 100%;
+
+
+}
+
+  /*그래프의 글씨*/
+.developValueDiv > .progress-label {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+}
+
+.developValueDiv > .progress-label > .progress-pre{
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  font-weight: bold;
+
+  white-space: pre-wrap; /* CSS3*/
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-all; /* Internet Explorer 5.5+ */
+
+}
+
+
+  /*원아 상태그래프 담을 div*/
+.valueGraphDiv2{
+  position: relative;
+  top:5px;
+  left:5px;
+  width:286px;
+  height: 336px;
+  border: 2px solid #bbbbbb;
+  background-color: white;
+  -webkit-box-shadow:0 2px 2px #555;
+
+}
+
+/*체크 없음을 알리는 메시지*/
+.valueGraphDiv2 > div{
+  position: relative;
+  text-align: center;
+}
+
+
+
+
+/*특이사항 타이틀 div*/
+.significant_divTitle{
+  position: relative;
+  left: 89px;
+  width: 240px;
+  height: 50px;
+  border: 2px solid white;
+  /*background: #FF5E00;*/
+  background-color: brown;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+  /*특이사항 타이틀 글씨*/
+.significant_divTitle > p {
+  position: relative;
+  top: 10px;
+  font-size: 120%;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+  /*특이사항div*/
+.significant_div{
+  position: relative;
+  /*top:15%;*/
+  left: 30px;
+  width: 300px;
+  height: 350px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: 2px solid brown;
+  background: white;
+}
+
+/*특이사항 div 스크롤 바 보이지 않게 하기*/
+.significant_div::-webkit-scrollbar{
+  display: none;
+}
+
+
+  /*뒤로 돌아가기 버튼*/
+#backTurnBtn{
+  position: absolute;
+  top:0px;
+  left: 80%;
+  width: 20%;
+  height: 45%;
+  background-color: #DCE6F2;
+  border: 1px solid black;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+#backTurnBtn > img {
+  position: relative;
+  /*top:15%;*/
+  /*text-align: center;*/
+  width: 100%;
+  height: 100%;
+
+}

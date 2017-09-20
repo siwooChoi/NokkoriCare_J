@@ -1,0 +1,432 @@
+
+/*body{
+  position: absolute;
+  width: 360px;
+  height: 615px;
+}*/
+
+#iCare{
+  position: relative;
+  width: 360px;
+  /*height: 630px;*/
+
+}
+
+#iCareBody{
+  position: relative;
+  top: 65px;
+  width: 360px;
+  /*height: 630px;*/
+  /*background-color: #D6F0FF;*/
+}
+
+
+  /* 백그라운드 on 버튼 */
+/*#backgoundOnBtn{
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 160px;
+  height: 40px;
+  background-color: #AAD5FF;
+  border: 2px solid white;
+  display: inline-block;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+#backgoundOnBtn > p{
+  position: relative;
+  top: 7px;
+  text-align: center;
+  font-weight: bold;
+}*/
+
+#backgoundBtn{
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid white;
+  display: inline-block;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+#backgoundBtn > p{
+  position: relative;
+  display: inline-block;
+  top: 7px;
+  font-weight: bold;
+}
+
+#backgoundBtnText{
+  position: absolute;
+  display: inline-block;
+}
+
+#backgroundPannel{
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  width: 154px;
+  height: 74px;
+  /*border: 2px solid white;*/
+  background-color: skyblue;
+  z-index: 1;
+}
+
+#backgroundPannel > div{
+  position: relative;
+  width: 150px;
+  height: 35px;
+  border: 2px solid white;
+  z-index: 2;
+}
+
+#backgroundPannel > div > p{
+  position: relative;
+  top: 6px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+
+
+
+  /* 백그라운드 off 버튼 */
+/*#backgoundOffBtn{
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 160px;
+  height: 40px;
+  background-color: #3162C7;
+  border: 2px solid white;
+  display: inline-block;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+#backgoundOffBtn > p{
+  position: relative;
+  top: 7px;
+  text-align: center;
+  font-weight: bold;
+}*/
+
+
+  /* 모드변경 버튼*/
+/*#modeChangeBtn{
+  position: absolute;
+  top: 60px;
+  left: 15px;
+  width: 130px;
+  height: 50px;
+  background-color: #00A2E8;
+  border: 1px solid white;
+  -webkit-box-shadow:0 3px 5px #555;
+}
+
+#modeChangeBtn > p{
+  position: relative;
+  top: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+#modeMessageDiv{
+  position: absolute;
+  top: 10px;
+  left: 165px;
+  width:160px;
+  height: 40px;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+*/
+
+#modeMessage2{
+  position: absolute;
+  top: 10px;
+  left: 185px;
+  width: 160px;
+  height: 40px;
+  border: 2px solid white;
+  background-color: #AAD5FF;
+  background-color: #efffef;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+#modeMessage2 > p{
+  position: relative;
+  display: inline-block;
+  top: 7px;
+  font-weight: bold;
+}
+
+#modeMessage2{
+  position: absolute;
+  display: inline-block;
+}
+
+
+/* "현재모드" 텍스트 */
+#modeMessage1{
+  position: relative;
+  width: 160px;
+  height: 20px;
+  background-color: #0062C4;
+  /*background-color: #2457BD;*/
+}
+
+#modeMessage1 > p{
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+}
+#modeText2{
+  color: green;
+}
+
+
+
+
+/* GPS, 비콘 설정*/
+/*#modeMessage2{
+  position: absolute;
+  top: 10px;
+  left: 185px;
+  width: 160px;
+  height: 40px;
+  border: 2px solid white;
+  background-color: #AAD5FF;
+  -webkit-box-shadow:0 2px 5px #555;
+}*/
+/*#modeMessage2 > p{
+  position: relative;
+  top: 7px;
+  text-align: center;
+  font-weight: bold;
+}*/
+
+
+/*GPS, 비콘 설정하는 판넬*/
+#iCareModePannel{
+  position: absolute;
+  top: 50px;
+  left: 185px;
+  width: 164px;
+  height: 74px;
+  /*border: 2px solid white;*/
+  background-color: skyblue;
+  z-index: 1;
+}
+
+#iCareModePannel > div{
+  position: relative;
+  width: 160px;
+  height: 35px;
+  border: 2px solid white;
+  z-index: 2;
+}
+
+#iCareModePannel > div > p{
+  position: relative;
+  top: 6px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+#mapInfo{
+  position: relative;
+  top: 20px;
+
+}
+
+#map{
+  position: relative;
+  /*top: 90px;*/
+  left:1px;
+  width: 355px;
+  height: 250px;
+  background-color: #EAEAEA;
+  border: 1px solid black;
+}
+
+#map > p {
+  position: relative;
+  top: 110px;
+  text-align: center;
+}
+
+/* GPS좌표받기, 내 위치표시 담은 div*/
+#gpsDivs{
+position: relative;
+  top: 5px;
+  left: 10px;
+  width: 330px;
+  height: 30px;
+}
+
+/*GPS좌표 받기 버튼*/
+#getGpsValueBtn{
+position: absolute;
+display: inline-block;
+width: 180px;
+height: 30px;
+background-color: #3DB7CC;
+border: 1px solid white;
+-webkit-box-shadow:0 2px 5px #555;
+}
+
+#getGpsValueBtn > p {
+  position: relative;
+  top: 3px;
+  text-align: center;
+  font-weight: bold;
+}
+
+  /*내 위치 표시 버튼*/
+#viewMyPointBtn{
+  position: absolute;
+  display: inline-block;
+  left: 180px;
+  width: 150px;
+  height: 30px;
+  background-color: #008299;
+  border: 1px solid white;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+#viewMyPointBtn > p{
+  position: relative;
+  top: 3px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*메시지 박스*/
+#textMessage{
+position: relative;
+top: 30px;
+left: 3px;
+width: 350px;
+height: 30px;
+background-color: white;
+border: 2px solid black;
+-webkit-box-shadow:0 2px 5px #555;
+}
+
+#textMessage > p {
+position: relative;
+top: 3px;
+text-align: center;
+}
+
+#scanMessage{
+  position: relative;
+  top: 35px;
+  left: 2px;
+  width: 350px;
+  height: 120px;
+  background-color: white;
+  /*border: 2px solid white;*/
+  -webkit-box-shadow:0 2px 5px #555;
+  border: 1px solid black;
+  overflow-y: scroll;
+}
+
+/*스크롤 바 보이지 않게 하기*/
+#scanMessage::-webkit-scrollbar{
+  display: none;
+}
+
+#scanMessage {
+  position: relative;
+  text-align: center;
+}
+
+  /* GPS 알람거리 조절 옵션*/
+#alarm_range_GPS{
+  position: relative;
+  top: 50px;
+  left:120px;
+  width: 300px;
+  height: 30px;
+  background-color: white;
+}
+
+
+  /* 블루투스 알람거리 조절 옵션*/
+#alarm_range_BLE{
+  position: relative;
+  top: 50px;
+  left:120px;
+  width: 300px;
+  height: 30px;
+  background-color: white;
+}
+
+
+  /*스캔중지, 스캔시작 버튼을 담아놓은 div*/
+#scanBtns{
+  position: relative;
+  top: 60px;
+  width: 360px;
+  height: 70px;
+}
+
+
+  /*스캔 중지 버튼*/
+#scanStopBtn{
+  position: relative;
+  display: inline-block;
+  /*top: 80px;*/
+  left: 15px;
+  width: 150px;
+  height: 35px;
+  background-color: #0B4DD5;
+  -webkit-box-shadow:0 2px 5px #555;
+  border: 1px solid white;
+}
+#scanStopBtn > p{
+  position: relative;
+  top: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: #dddddd;
+}
+
+  /*스캔 시작 버튼*/
+#scanStartBtn{
+  position: relative;
+  display: inline-block;
+  /*top: 80px;*/
+  left: 35px;
+  width: 150px;
+  height: 35px;
+  background-color: #0B4DD5;
+  -webkit-box-shadow:0 2px 5px #555;
+  border: 1px solid white;
+
+}
+#scanStartBtn > p{
+  position: relative;
+  top: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: #dddddd;
+}
+
+/*#bottomSpace{
+  position: relative;
+  top: 100px;
+  width: 360px;
+  height: 30px;
+}*/
+
+
+
+/**/

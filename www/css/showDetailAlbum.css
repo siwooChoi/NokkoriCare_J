@@ -1,0 +1,89 @@
+/*상세보기 전반적인 틀*/
+#showDetailAlbum{
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  height: 90%;
+  background-color: #F0EBFF;
+}
+
+/*상세보기 이미지 Div*/
+#detailAlbumImageDiv{
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  width: 95%;
+  height: 50%;
+  border: 1px solid black;
+}
+
+/*상세보기 이미지*/
+#detailAlbumImageDiv > img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* 상세보기 사진작성 날짜 Div*/
+#detailAlbumRegistDiv{
+  position: absolute;
+  top: 55%;
+  left:4%;
+  width: 90%;
+  height: 5%;
+  border: 2px solid black;
+  background-color: #BD96FF;
+}
+
+/* 상세보기 사진작성 날짜*/
+#detailAlbumRegistDiv > p{
+  position: relative;
+  top: 5%;
+  /*left:5%;*/
+  right: 5%;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* 상세보기 이미지메모 Div*/
+#detailAlbumMemoDiv{
+  position: absolute;
+  top: 61%;
+  left:4%;
+  width: 90%;
+  height: 20%;
+  border: 2px solid black;
+  background-color: white;
+}
+
+/* 상세보기 이미지메모*/
+#detailAlbumMemoDiv > p{
+  position: relative;
+  top: 5%;
+  left:5%;
+  font-weight: bold;
+}
+
+
+
+
+/* 뒤로가기 버튼*/
+#detailAlbumBackBtn{
+  position: absolute;
+  top: 90%;
+  left: 70%;
+  width: 25%;
+  height: 8%;
+  background-color: white;
+  color: #555555;
+  border: 1px solid #777777;
+}
+/* 뒤로가기 버튼 글씨*/
+#detailAlbumBackBtn > p{
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: bold;
+}

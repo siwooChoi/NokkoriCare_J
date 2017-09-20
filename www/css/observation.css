@@ -1,0 +1,625 @@
+body{
+  /*position: absolute;
+  width:auto;
+  height: auto;
+  overflow-y: scroll;*/
+}
+
+
+#tObservation{
+  position: absolute;
+  top:65px;
+  width: 100%;
+  height: 550px;
+  /*background-color: #FFD8D8;*/
+  background-color: white;
+  /*border: 1px solid black;*/
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/*스크롤 바 보이지 않게 하기*/
+#tObservation::-webkit-scrollbar{
+  display: none;
+}
+
+/*원아 선택 버튼*/
+#tObSelectChild{
+  position: absolute;
+  top: 7px;
+  width: 40px;
+  height: 95px;
+  /*background-color: #F15F5F;*/
+  background-color: #FF4D4D;
+  /*background-color: #ffafaf;*/
+  border-radius: 0 20% 20% 0%;
+}
+
+/* 원아선택 이라는 글씨*/
+#tObSelectChild > p {
+  position: relative;
+  left: 9px;
+  font-weight: bold;
+}
+
+/* 슬라이드 형식으로 나올 패널*/
+#tObSelectChildPanel{
+  position: absolute;
+  top: 5px;
+  width: 360px;
+  height: 545px;
+  background-color: #FFBFBF;
+  border-radius: 3%;
+  z-index: 3;
+
+}
+
+/* 패널 닫기 버튼 */
+#tObSelectChildPanelCloseBtn{
+  position: relative;
+  top: 5px;
+  left: 315px;
+  width: 40px;
+  height: 40px;
+  /*background-color: #FFBFBF;*/
+  background-image: url('../img/xBtn.png');
+  background-size: 100%, 100%;
+}
+
+/* 패널 속 원아리스트*/
+#tObSelectChildList{
+  position: relative;
+  top:15px;
+  left: 10px;
+  width: 340px;
+  height: 470px;
+  background-color: white;
+  border-radius: 3%;
+  overflow-y: scroll;
+}
+
+/*스크롤 바 보이지 않게 하기*/
+#tObSelectChildList::-webkit-scrollbar{
+  display: none;
+}
+
+/*원아리스트 안 이름,사진 틀*/
+.selectImgAndNameObs{
+  position: relative;
+  /*top:5%;*/
+  left:5%;
+  width: 90%;
+  height: 100px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: 2px solid #F17F7F;
+  /*background-color: #EAEAEA;*/
+  -webkit-box-shadow:0 2px 5px #F15F5F;
+}
+
+/*리스트 사진틀*/
+.imageDivObs{
+  position: relative;
+  display: inline-block;
+  top:3px;
+  left:2%;
+  width:90px;
+  height: 90px;
+  border: 2px  #555555 solid;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+/*리스트 사진틀의 사진*/
+.imageDivObs > img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/*리스트 이름틀*/
+.NameDivObs{
+  position: absolute;
+  display: inline-block;
+  top:10%;
+  left:110px;
+  width: 170px;
+  height: 80%;
+  background-color: black;
+  -webkit-box-shadow:0 2px 3px #555;
+}
+
+
+.NameDivObs > div{
+  position: relative;
+  top:2%;
+  left: 1%;
+  width: 98%;
+  height:96%;
+  background-color: #F17F7F;
+}
+
+/*리스트 이름*/
+.NameDivObs > div > p{
+  position: relative;
+  top:30%;
+  text-align: center;
+  text-shadow: 1px 1px #777777;
+  font-size: 110%;
+  font-weight: bold;
+}
+
+
+
+
+
+/*사진이름 틀*/
+#tObChildInfo{
+position: absolute;
+top:7px;
+left:50px;
+width: 260px;
+height: 95px;
+/*border: 2px red solid;*/
+/*margin-top: 3%;*/
+
+}
+
+#tObChildInfo > div{
+  position: absolute;
+  width: 100%;
+  height: 95px;
+  background-color: #FFA7A7;
+}
+/*사진*/
+#tObChildInfo > div > img{
+position: absolute;
+top: 5px;
+width:80px;
+height: 80px;
+left:2%;
+border: 2px black solid;
+border-radius: 100%;
+}
+
+/*이름 틀*/
+#tObChildInfo > div > div{
+position: absolute;
+display: inline-block;
+top:8px;
+left:100px;
+width: 140px;
+height: 80px;
+/*padding: 5%;*/
+/*background-color: #F15F5F;
+background-color: #ffafaf;*/
+background-color: #FF4D4D;
+
+border-radius: 10%;
+
+}
+/*이름 글씨*/
+#tObChildInfo > div > div > p{
+position: relative;
+top:28px;
+/*left: 25%;*/
+text-align: center;
+font-weight: bold;
+font-size: 120%;
+}
+
+ /* 기능변경 버튼 */
+#tObChangeModeBtn {
+  position: absolute;
+  top: 7px;
+  left: 320px;
+  width: 40px;
+  height: 95px;
+
+  /*background-color: #F15F5F;*/
+  background-color: #FF4D4D;
+  border-radius: 20% 0% 0% 20%;
+}
+
+/* 기능선택 이라는 글씨*/
+#tObChangeModeBtn > p {
+  position: relative;
+  left: 12px;
+  font-weight: bold;
+}
+
+
+/* 슬라이드 형식으로 나올 패널*/
+#tObChangeModePanel{
+  position: absolute;
+  /*top: 5px;*/
+  width: 360px;
+  height: 550px;
+  /*background-color: white;*/
+  /*border-radius: 3%;*/
+  z-index: 3;
+
+
+}
+
+/* 패널 닫기 버튼 */
+.tObChangeModePanelCloseBtn{
+  position: relative;
+  top: 5px;
+  left: 315px;
+  width: 40px;
+  height: 40px;
+  /*background-color: #FFBFBF;*/
+  background-image: url('../img/xBtn.png');
+  background-size: 100%, 100%;
+}
+
+
+
+
+#tObText{
+  position: absolute;
+  top:100px;
+  width: 100%;
+  height:450px;
+  /*overflow-x: hidden;
+  overflow-y: scroll;*/
+}
+
+/*스크롤 바 보이지 않게 하기*/
+/*#tObText::-webkit-scrollbar{
+display: none;
+}*/
+
+/*취소버튼*/
+#tObCancelBtn1{
+position: absolute;
+display: inline-block;
+top:210px;
+left:5%;
+width: 40%;
+height: 30px;
+text-align: center;
+/*background-color: #BBBBBB;*/
+background-color: white;
+border: 1px #777777 solid;
+color: #555555;
+}
+
+/*저장 버튼*/
+#tObSaveBtn1{
+position: absolute;
+display: inline-block;
+top:210px;
+left: 53%;
+width: 40%;
+height: 30px;
+border: 1px #0F9865 solid;
+text-align: center;
+color: white;
+/*background-color: #BBBBBB;*/
+background-color: #0F9865;
+
+}
+
+/*취소,저장 버튼 글씨*/
+#tObCancelBtn1 > p, #tObSaveBtn1 > p{
+position: relative;
+text-align: center;
+top:2px;
+font-size: 120%;
+}
+
+/*텍스트 메모*/
+#textMemo{
+position: relative;
+left:4%;
+margin-top:3%;
+width: 90%;
+border: 2px solid black;
+font-size: 200%;
+}
+
+/*당일 적은 메모확인*/
+#tObSavedText{
+  position: relative;
+  top: 400px;
+  left: 4%;
+  width: 70%;
+  height: 295px;
+  border: 2px solid black;
+  background-color: white;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#tObSavedText::-webkit-scrollbar{
+display: none;
+}
+
+
+/* '오늘 작성한 메모  글씨'*/
+.savedTextsTileDiv{
+  position: relative;
+  width: 70%;
+  left: 4%;
+  top:45px;
+  height: 30px;
+  background-color: #FF4D4D;
+  border-top: solid 2px black;
+  border-left:  solid 2px black;
+  border-right:  solid 2px black;
+}
+
+.savedTextsTitle{
+  position: relative;
+  /*top:20%;*/
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  font-size: 120%;
+  font-weight: bold;
+  /*color: #2C3E50;*/
+
+  /*text-shadow: 1px 1px #aaaaaa;*/
+  margin-bottom: 10%;
+}
+
+  /* 오늘 작성한 텍스트 보이는곳 */
+#tObSavedText{
+  position: relative;
+  top:40px;
+  height: 37%;
+}
+
+  /* 오늘 작성한 메모들*/
+#tObSavedText > p{
+  position: relative;
+  font-size: 120%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*그리기로 전환 버튼 공간*/
+#tObChangeDrawBtn{
+  position: absolute;
+  display: inline-block;
+  top: 360px;
+  left: 275px;
+  width: 80px;
+  height: 80px;
+}
+
+/*그리기로 전환버튼*/
+#tObChangeDrawBtn > img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  z-index: 1;
+}
+
+#tObDraw{
+  top:13%;
+  position: absolute;
+  width: 100%;
+  height: 80%;
+}
+
+#drawCanvas{
+  background-color: white;
+}
+
+#drawDiv{
+  position: relative;
+  top:1%;
+  width: 100%;
+  height: 350px;
+  /*background-color: white;*/
+}
+
+#drawDiv2{
+  position: relative;
+  width: 100%;
+  height: 80%;
+}
+
+/*그리기 캔버스*/
+#drawDiv2 > canvas{
+  position: relative;
+border-top : 2px black solid;
+border-bottom : 2px black solid;
+z-index: 1;
+
+}
+
+  /*캔버스로 저장한 그림 보는 페이지 버튼*/
+#tObSavedDrawBtn{
+  position: absolute;
+  top: 88%;
+  left:4%;
+  width: 60%;
+  height: 12%;
+  border: 2px #353535 solid;
+  background-color: #FFA7A7;
+
+}
+
+  /*저장한 그림 보기*/
+#tObSavedDrawBtn > p{
+  position: relative;
+  top:20%;
+  font-size: 120%;
+  text-align: center;
+  font-weight: bold;
+}
+
+  /*캔버스 저장한 그림 페이지 메인*/
+#showSavedImages{
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  height: 90%;
+  background-color: #FFD8D8;
+}
+
+  /*캔버스 저장한 그림 페이지 div*/
+#showSavedImagesDiv{
+  position: absolute;
+  top: 5%;
+  /*left: 5%;*/
+  width: 100%;
+  /*height: 70%;*/
+  height: 80%;
+  background-color: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#showSavedImagesDiv > div{
+  position: relative;
+  left: 5%;
+  width: 90%;
+  display: inline-block;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  border: 1px solid black;
+  /*border-top: 1px solid black;
+  border-bottom: 1px solid black;*/
+
+  /*position: relative;
+  margin-left: 5%;
+  width: 42%;
+  display: inline-block;
+  margin-top: 5%;
+  border: 1px solid black;*/
+
+}
+
+#showSavedImagesDiv > div > img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid black;*/
+}
+
+
+
+  /* 그리기화면으로 다시 돌아가기 버튼 Div*/
+#backTObDraw{
+  position: absolute;
+  /*top: 80%;*/
+  top: 87%;
+  left: 23%;
+  width: 70%;
+  height: 10%;
+  border: 1px solid #777777;
+  background-color: white;
+  color: #555555;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+#backTObDraw > p {
+  position: relative;
+  top:30%;
+  font-size: 120%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*스크롤 바 보이지 않게 하기*/
+#showSavedImagesDiv::-webkit-scrollbar{
+  display: none;
+}
+
+/*취소버튼*/
+#tObCancelBtn2{
+  position: relative;
+  display: inline-block;
+  margin-top: 10%;
+  left:5%;
+  width: 40%;
+  text-align: center;
+  background-color: white;
+  border: 1px #777777 solid;
+  color: #555555;
+}
+
+/*저장 버튼*/
+#tObSaveBtn2{
+  position: relative;
+  display: inline-block;
+  left: 10%;
+  width: 40%;
+  border: 1px #0F9865 solid;
+  text-align: center;
+  /*background-color: #BBBBBB;*/
+  background-color: #0F9865;
+  color: white;
+}
+
+/*취소,저장 버튼 글씨*/
+#tObCancelBtn2 > p, #tObSaveBtn2 > p{
+  text-align: center;
+  font-size: 120%;
+}
+
+
+  /*그리기 옵션*/
+#drawOptionsDiv{
+  position: relative;
+  top: 25%;
+  width:95%;
+  left: 3%;
+}
+
+
+  /* 캔버스 뒤로 돌아가기 버튼*/
+#btnPrev{
+  position: absolute;
+  display: inline-block;
+  left: 33%;
+  width: 20%;
+  height: 100%;
+  background-color: white;
+  border: 2px black solid;
+  text-align: center;
+}
+
+  /*캔버스 클리어 버튼*/
+#btnClea{
+  position: absolute;
+  display: inline-block;
+
+  left: 55%;
+  width: 20%;
+  height: 100%;
+  background-color: white;
+  border: 2px black solid;
+  text-align: center;
+}
+
+/*텍스트로 전환 버튼 공간*/
+#tObChangeTextBtn{
+  position: absolute;
+  top:95%;
+  left: 77%;
+  width: 20%;
+  height: 20%;
+  /*background-color: black;*/
+
+}
+/*텍스트로 전환버튼*/
+#tObChangeTextBtn > img{
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  z-index: 1;
+}

@@ -1,0 +1,389 @@
+
+*{
+  margin:0;
+}
+
+body > div {
+  display:none;
+}
+
+#notLogin{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#notLogin::-webkit-scrollbar{
+  display: none;
+}
+
+/*#tloginMains{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}*/
+
+#tLoginTop{
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  /*border : 1px solid black;*/
+  /*z-index:*/
+  /*overflow: hidden;*/
+  background-color: white;
+  z-index: 2;
+}
+
+  /*사이드 메뉴 이미지가 들어갈 공간*/
+#sideMenuBtn{
+  position:absolute;
+  left:7px;
+  top:7px;
+  width: 55px;
+  height: 55px;
+  /*break-after: always;*/
+  z-index: 3;
+  background-color: black;
+}
+
+  /*사이드메뉴 이미지*/
+#sideMenuBtn > img{
+  position: relative;
+  width:55px;
+  height:55px;
+  z-index: 5;
+  background-color: black;
+/*-webkit-box-shadow:0 2px 5px #555;*/
+
+}
+  /*사이드메뉴 슬라이드 판*/
+#sideMenuListDiv{
+  position: absolute;
+  top: 60px;
+  width:200px;
+  background-color: white;
+  color:black;
+  /*border: 2px solid black;*/
+  z-index: 6;
+}
+
+
+  /*사이드메뉴 슬라이드 메뉴목록*/
+#sideMenuListDiv >  div{
+  font-size: 120%;
+  height: 50px;
+  text-align: center;
+  /*border: 1px solid black;*/
+  -webkit-box-shadow:0 2px 5px #555;
+  z-index: 7;
+
+}
+
+  /*사이드메뉴 슬라이드 메뉴목록 글씨*/
+#sideMenuListDiv > div > p{
+  position: relative;
+  top:25%;
+  z-index: 8;
+}
+  /*상단 부분 전반적인 공간 div*/
+#top {
+  position: fixed;
+  width:100%;
+  height:65px;
+  text-align: center;
+  line-height: 300%;
+  background-color: white;
+  z-index: 2;
+
+}
+
+/*#imgLogo{
+  position: absolute;
+  left: 2px;
+  width: 80px;
+  height: 57px;
+  background-color: white;
+  z-index: 2;
+}*/
+
+#imgLogo{
+  position: absolute;
+  top: 5px;
+  left: 60px;
+  width: 300px;
+  height: 60px;
+
+  z-index: 2;
+}
+
+/*로고 이미지*/
+#imgLogo > img{
+  position: relative;
+  width: 290px;
+  height: 60px;
+  z-index: 1;
+  -webkit-box-shadow:0 1px 1px #555;
+  z-index: 2;
+}
+
+  /*로고 텍스트*/
+#textLogo{
+  position: relative;
+  left: 80px;
+  top: 10px;
+  width:250px;
+  background-color: #FF7012;
+  z-index: 2;
+  -webkit-box-shadow:0 2px 5px #555;
+}
+
+#textLogo > p {
+  position: relative;
+  color:white;
+  font-size: 200%;
+  font-weight: bold;
+  text-shadow: 1px 1px #aaaaaa;
+  z-index: 2;
+}
+
+  /*메인 부분 전반적인 공간*/
+#teacherMain{
+  position: absolute;
+  top:65px;
+  width:100%;
+  height: 555px;
+  /*background-color: #eeeeee;*/
+  background-color: #ffffff;
+}
+
+  /*관찰일지 작성 도우미 박스*/
+#box1{
+  position: absolute;
+  top:25px;
+  left: 25px;
+  width: 140px;
+  height: 150px;
+  background-color: #ffcfcf;
+  /*background-color: #FF4848;*/
+  text-align: center;
+  /*color:white;*/
+  border-radius: 5%;
+  -webkit-box-shadow:0 2px 2px #555;
+}
+
+#box1 > img{
+  position: relative;
+  /*top: 10px;*/
+  left: 5px;
+  width: 120px;
+  height: 120px;
+}
+
+#box1 > p{
+  position: relative;
+  /*top: 3px;*/
+  left: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  /*top: 35%;*/
+  /*text-shadow: 1px 2px #aaaaaa;*/
+}
+
+
+
+  /*발달 행동체크 박스*/
+#box2{
+  position: absolute;
+  top:25px;
+  right: 10%;
+  width: 140px;
+  height: 150px;
+  /*background-color: #FF7012;*/
+  /*background-color: #FF8224;*/
+  background-color: #ffdfaf;
+  text-align: center;
+  border-radius: 5%;
+  -webkit-box-shadow:0 2px 2px #555;
+}
+
+#box2 > img{
+  position: relative;
+  /*left: 5px;*/
+  width: 100px;
+  height: 120px;
+}
+
+#box2 > p{
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  /*top: 35%;*/
+  /*text-shadow: 1px 2px #aaaaaa;*/
+}
+
+
+
+  /*아이체크 박스*/
+#box3{
+  position: absolute;
+  top:35%;
+  left: 25px;
+  width: 140px;
+  height: 150px;
+  background-color: #ffffcc;
+  text-align: center;
+  border-radius: 5%;
+  -webkit-box-shadow:0 2px 2px #555;
+}
+
+#box3 > img{
+  position: relative;
+  top: 10px;
+  left: 3px;
+  width: 110px;
+  height: 110px;
+}
+
+#box3 > p{
+  position: relative;
+  top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  /*top: 35%;*/
+  /*text-shadow: 1px 2px #aaaaaa;*/
+}
+
+
+  /*원아지킴이 박스*/
+#box4{
+  position: absolute;
+  top:35%;
+  right: 10%;
+  width: 140px;
+  height: 150px;
+  background-color: #cfffcf;
+  text-align: center;
+  /*color:white;*/
+  border-radius: 5%;
+  -webkit-box-shadow:0 2px 2px #555;
+}
+
+#box4 > img{
+  position: relative;
+  /*left: 5px;*/
+  top: 5px;
+  width: 110px;
+  height: 115px;
+}
+
+#box4 > p{
+  position: relative;
+  top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  /*top: 35%;*/
+  /*text-shadow: 1px 2px #aaaaaa;*/
+}
+
+  /*사진업로드 박스*/
+#box5{
+  position: absolute;
+  top:65%;
+  left: 25px;
+  width: 140px;
+  height: 150px;
+  /*background-color: #6799FF;*/
+  background-color: #efefff;
+  text-align: center;
+  border-radius: 5%;
+  -webkit-box-shadow:0 2px 2px #555;
+}
+
+#box5 > img{
+  position: relative;
+  /*left: 5px;*/
+  top: 5px;
+  width: 120px;
+  height: 120px;
+}
+
+#box5 > p{
+  position: relative;
+  top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  /*top: 35%;*/
+  /*text-shadow: 1px 2px #aaaaaa;*/
+}
+
+  /*앨범 보기 박스*/
+#box6{
+  position: absolute;
+  top:65%;
+  right: 36px;
+  width:140px;
+  height: 150px;
+  background-color: #ffcfff;
+  text-align: center;
+  border-radius: 5%;
+  -webkit-box-shadow:0 2px 2px #555;
+}
+
+#box6 > img{
+  position: relative;
+  left: 5px;
+  top: 5px;
+  width: 123px;
+  height: 123px;
+}
+
+#box6 > p{
+  position: relative;
+  /*top: 5px;*/
+  font-size: 16px;
+  font-weight: bold;
+  /*top: 35%;*/
+  /*text-shadow: 1px 2px #aaaaaa;*/
+}
+
+  /*각 박스 속 텍스트*/
+/*#teacherMain > div > h3 {
+  position: relative;
+  top: 35%;
+  text-shadow: 1px 2px #aaaaaa;
+}*/
+
+
+
+#box2 > h3{
+  position: relative;
+  top: 35%;
+  text-shadow: 1px 2px #aaaaaa;
+}
+
+#box3 > h3{
+  position: relative;
+  top: 40%;
+  text-shadow: 1px 2px #aaaaaa;
+}
+
+#box4 > h3{
+  position: relative;
+  top: 40%;
+  text-shadow: 1px 2px #aaaaaa;
+}
+
+
+#box5 > h3{
+  position: relative;
+  top: 40%;
+  text-shadow: 1px 2px #aaaaaa;
+}
+
+#box6 > h3{
+  position: relative;
+  top: 40%;
+  text-shadow: 1px 2px #aaaaaa;
+}
